@@ -1,0 +1,1213 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABORT_RECORD	LogFile.java	/^    static final int ABORT_RECORD = 1;$/;"	f	class:LogFile
+AVG	Aggregator.java	/^        MIN, MAX, SUM, AVG, COUNT,$/;"	e	enum:Aggregator.Op	file:
+AbstractDbFileIterator	AbstractDbFileIterator.java	/^public abstract class AbstractDbFileIterator implements DbFileIterator {$/;"	c
+Aggregate	Aggregate.java	/^    public Aggregate(OpIterator child, int afield, int gfield, Aggregator.Op aop) {$/;"	m	class:Aggregate
+Aggregate	Aggregate.java	/^public class Aggregate extends Operator {$/;"	c
+Aggregator	Aggregator.java	/^public interface Aggregator extends Serializable {$/;"	i
+BEGIN_RECORD	LogFile.java	/^    static final int BEGIN_RECORD = 4;$/;"	f	class:LogFile
+BTreeChecker	BTreeChecker.java	/^public class BTreeChecker {$/;"	c
+BTreeDeleter	BTreeUtility.java	/^		public BTreeDeleter(BTreeFile bf, BlockingQueue<ArrayList<Integer>> insertedTuples) {$/;"	m	class:BTreeUtility.BTreeDeleter
+BTreeDeleter	BTreeUtility.java	/^	public static class BTreeDeleter extends Thread {$/;"	c	class:BTreeUtility
+BTreeEntry	BTreeEntry.java	/^	public BTreeEntry(Field key, BTreePageId leftChild, BTreePageId rightChild) {$/;"	m	class:BTreeEntry
+BTreeEntry	BTreeEntry.java	/^public class BTreeEntry implements Serializable {$/;"	c
+BTreeFile	BTreeFile.java	/^	public BTreeFile(File f, int key, TupleDesc td) {$/;"	m	class:BTreeFile
+BTreeFile	BTreeFile.java	/^public class BTreeFile implements DbFile {$/;"	c
+BTreeFileEncoder	BTreeFileEncoder.java	/^public class BTreeFileEncoder {$/;"	c
+BTreeFileIterator	BTreeFile.java	/^	public BTreeFileIterator(BTreeFile f, TransactionId tid) {$/;"	m	class:BTreeFileIterator
+BTreeFileIterator	BTreeFile.java	/^class BTreeFileIterator extends AbstractDbFileIterator {$/;"	c
+BTreeHeaderPage	BTreeHeaderPage.java	/^	public BTreeHeaderPage(BTreePageId id, byte[] data) throws IOException {$/;"	m	class:BTreeHeaderPage
+BTreeHeaderPage	BTreeHeaderPage.java	/^public class BTreeHeaderPage implements Page {$/;"	c
+BTreeInserter	BTreeUtility.java	/^		public BTreeInserter(BTreeFile bf, int[] tupdata, BlockingQueue<ArrayList<Integer>> insertedTuples) {$/;"	m	class:BTreeUtility.BTreeInserter
+BTreeInserter	BTreeUtility.java	/^	public static class BTreeInserter extends Thread {$/;"	c	class:BTreeUtility
+BTreeInternalPage	BTreeInternalPage.java	/^	public BTreeInternalPage(BTreePageId id, byte[] data, int key) throws IOException {$/;"	m	class:BTreeInternalPage
+BTreeInternalPage	BTreeInternalPage.java	/^public class BTreeInternalPage extends BTreePage {$/;"	c
+BTreeInternalPageIterator	BTreeInternalPage.java	/^	public BTreeInternalPageIterator(BTreeInternalPage p) {$/;"	m	class:BTreeInternalPageIterator
+BTreeInternalPageIterator	BTreeInternalPage.java	/^class BTreeInternalPageIterator implements Iterator<BTreeEntry> {$/;"	c
+BTreeInternalPageReverseIterator	BTreeInternalPage.java	/^	public BTreeInternalPageReverseIterator(BTreeInternalPage p) {$/;"	m	class:BTreeInternalPageReverseIterator
+BTreeInternalPageReverseIterator	BTreeInternalPage.java	/^class BTreeInternalPageReverseIterator implements Iterator<BTreeEntry> {$/;"	c
+BTreeLeafPage	BTreeLeafPage.java	/^	public BTreeLeafPage(BTreePageId id, byte[] data, int key) throws IOException {$/;"	m	class:BTreeLeafPage
+BTreeLeafPage	BTreeLeafPage.java	/^public class BTreeLeafPage extends BTreePage {$/;"	c
+BTreeLeafPageIterator	BTreeLeafPage.java	/^	public BTreeLeafPageIterator(BTreeLeafPage p) {$/;"	m	class:BTreeLeafPageIterator
+BTreeLeafPageIterator	BTreeLeafPage.java	/^class BTreeLeafPageIterator implements Iterator<Tuple> {$/;"	c
+BTreeLeafPageReverseIterator	BTreeLeafPage.java	/^	public BTreeLeafPageReverseIterator(BTreeLeafPage p) {$/;"	m	class:BTreeLeafPageReverseIterator
+BTreeLeafPageReverseIterator	BTreeLeafPage.java	/^class BTreeLeafPageReverseIterator implements Iterator<Tuple> {$/;"	c
+BTreePage	BTreePage.java	/^	public BTreePage(BTreePageId id, int key) throws IOException {$/;"	m	class:BTreePage
+BTreePage	BTreePage.java	/^public abstract class BTreePage implements Page {$/;"	c
+BTreePageId	BTreePageId.java	/^	public BTreePageId(int tableId, int pgNo, int pgcateg) {$/;"	m	class:BTreePageId
+BTreePageId	BTreePageId.java	/^public class BTreePageId implements PageId {$/;"	c
+BTreeReader	BTreeUtility.java	/^		public BTreeReader(TransactionId tid, BTreeFile bf, Field f, int count) {$/;"	m	class:BTreeUtility.BTreeReader
+BTreeReader	BTreeUtility.java	/^	static class BTreeReader extends Thread {$/;"	c	class:BTreeUtility
+BTreeRootPtrPage	BTreeRootPtrPage.java	/^	public BTreeRootPtrPage(BTreePageId id, byte[] data) throws IOException {$/;"	m	class:BTreeRootPtrPage
+BTreeRootPtrPage	BTreeRootPtrPage.java	/^public class BTreeRootPtrPage implements Page {$/;"	c
+BTreeScan	BTreeScan.java	/^	public BTreeScan(TransactionId tid, int tableid, IndexPredicate ipred) {$/;"	m	class:BTreeScan
+BTreeScan	BTreeScan.java	/^	public BTreeScan(TransactionId tid, int tableid, String tableAlias, IndexPredicate ipred) {$/;"	m	class:BTreeScan
+BTreeScan	BTreeScan.java	/^public class BTreeScan implements OpIterator {$/;"	c
+BTreeSearchIterator	BTreeFile.java	/^	public BTreeSearchIterator(BTreeFile f, TransactionId tid, IndexPredicate ipred) {$/;"	m	class:BTreeSearchIterator
+BTreeSearchIterator	BTreeFile.java	/^class BTreeSearchIterator extends AbstractDbFileIterator {$/;"	c
+BTreeUtility	BTreeUtility.java	/^public class BTreeUtility {$/;"	c
+BTreeWriter	BTreeUtility.java	/^		public BTreeWriter(TransactionId tid, BTreeFile bf, int item, int count) {$/;"	m	class:BTreeUtility.BTreeWriter
+BTreeWriter	BTreeUtility.java	/^	static class BTreeWriter extends Thread {$/;"	c	class:BTreeUtility
+BufferPool	BufferPool.java	/^    public BufferPool(int numPages) {$/;"	m	class:BufferPool
+BufferPool	BufferPool.java	/^public class BufferPool {$/;"	c
+CHECKPOINT_RECORD	LogFile.java	/^    static final int CHECKPOINT_RECORD = 5;$/;"	f	class:LogFile
+COMMIT_RECORD	LogFile.java	/^    static final int COMMIT_RECORD = 2;$/;"	f	class:LogFile
+COUNT	Aggregator.java	/^        MIN, MAX, SUM, AVG, COUNT,$/;"	e	enum:Aggregator.Op	file:
+Catalog	Catalog.java	/^    public Catalog() {$/;"	m	class:Catalog
+Catalog	Catalog.java	/^public class Catalog {$/;"	c
+CostCard	CostCard.java	/^public class CostCard {$/;"	c
+DEBUG_LEVEL	Debug.java	/^  private static final int DEBUG_LEVEL;$/;"	f	class:Debug	file:
+DEFAULT_LEVEL	Debug.java	/^  private static final int DEFAULT_LEVEL = 0;$/;"	f	class:Debug	file:
+DEFAULT_PAGES	BufferPool.java	/^    public static final int DEFAULT_PAGES = 50;$/;"	f	class:BufferPool
+DEFAULT_PAGE_SIZE	BufferPool.java	/^    private static final int DEFAULT_PAGE_SIZE = 4096;$/;"	f	class:BufferPool	file:
+Database	Database.java	/^    private Database() {$/;"	m	class:Database	file:
+Database	Database.java	/^public class Database {$/;"	c
+DbException	DbException.java	/^    public DbException(String s) {$/;"	m	class:DbException
+DbException	DbException.java	/^public class DbException extends Exception {$/;"	c
+DbFile	DbFile.java	/^public interface DbFile {$/;"	i
+DbFileIterator	DbFileIterator.java	/^public interface DbFileIterator{$/;"	i
+DeadlockException	DeadlockException.java	/^    public DeadlockException() {$/;"	m	class:DeadlockException
+DeadlockException	DeadlockException.java	/^public class DeadlockException extends Exception {$/;"	c
+Debug	Debug.java	/^public class Debug {$/;"	c
+Delete	Delete.java	/^    public Delete(TransactionId t, OpIterator child) {$/;"	m	class:Delete
+Delete	Delete.java	/^public class Delete extends Operator {$/;"	c
+EQUALS	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+EntryComparator	BTreeFileEncoder.java	/^	public static class EntryComparator implements Comparator<BTreeEntry> {$/;"	c	class:BTreeFileEncoder
+Field	Field.java	/^public interface Field extends Serializable{$/;"	i
+Filter	Filter.java	/^    public Filter(Predicate p, OpIterator child) {$/;"	m	class:Filter
+Filter	Filter.java	/^public class Filter extends Operator {$/;"	c
+GREATER_THAN	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+GREATER_THAN_OR_EQ	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+GROUPBY	QueryPlanVisualizer.java	/^    static final String GROUPBY = "g";$/;"	f	class:QueryPlanVisualizer
+HASH_JOIN	QueryPlanVisualizer.java	/^    static final String HASH_JOIN = "⨝(hash)";$/;"	f	class:QueryPlanVisualizer
+HEADER	BTreePageId.java	/^	public final static int HEADER = 3;$/;"	f	class:BTreePageId
+HashEquiJoin	HashEquiJoin.java	/^    public HashEquiJoin(JoinPredicate p, OpIterator child1, OpIterator child2) {$/;"	m	class:HashEquiJoin
+HashEquiJoin	HashEquiJoin.java	/^public class HashEquiJoin extends Operator {$/;"	c
+HeapFile	HeapFile.java	/^    public HeapFile(File f, TupleDesc td) {$/;"	m	class:HeapFile
+HeapFile	HeapFile.java	/^public class HeapFile implements DbFile {$/;"	c
+HeapFileEncoder	HeapFileEncoder.java	/^public class HeapFileEncoder {$/;"	c
+HeapPage	HeapPage.java	/^    public HeapPage(HeapPageId id, byte[] data) throws IOException {$/;"	m	class:HeapPage
+HeapPage	HeapPage.java	/^public class HeapPage implements Page {$/;"	c
+HeapPageId	HeapPageId.java	/^    public HeapPageId(int tableId, int pgNo) {$/;"	m	class:HeapPageId
+HeapPageId	HeapPageId.java	/^public class HeapPageId implements PageId {$/;"	c
+INDEX_SIZE	BTreeHeaderPage.java	/^	final static int INDEX_SIZE = Type.INT_TYPE.getLen();$/;"	f	class:BTreeHeaderPage
+INDEX_SIZE	BTreePage.java	/^	protected final static int INDEX_SIZE = Type.INT_TYPE.getLen();$/;"	f	class:BTreePage
+INTERNAL	BTreePageId.java	/^	public final static int INTERNAL = 1;$/;"	f	class:BTreePageId
+INT_SIZE	LogFile.java	/^    final static int INT_SIZE = 4;$/;"	f	class:LogFile
+INT_TYPE	Type.java	/^    INT_TYPE() {$/;"	e	enum:Type	file:
+INT_TYPE	Type.java	/^    INT_TYPE() {$/;"	m	enum:Type
+IOCOSTPERPAGE	TableStats.java	/^    static final int IOCOSTPERPAGE = 1000;$/;"	f	class:TableStats
+IndexOpIterator	IndexOpIterator.java	/^public interface IndexOpIterator extends OpIterator {$/;"	i
+IndexPredicate	IndexPredicate.java	/^    public IndexPredicate(Predicate.Op op, Field fvalue) {$/;"	m	class:IndexPredicate
+IndexPredicate	IndexPredicate.java	/^public class IndexPredicate implements Serializable {$/;"	c
+Insert	Insert.java	/^    public Insert(TransactionId t, OpIterator child, int tableId)$/;"	m	class:Insert
+Insert	Insert.java	/^public class Insert extends Operator {$/;"	c
+IntField	IntField.java	/^    public IntField(int i) {$/;"	m	class:IntField
+IntField	IntField.java	/^public class IntField implements Field {$/;"	c
+IntHistogram	IntHistogram.java	/^    public IntHistogram(int buckets, int min, int max) {$/;"	m	class:IntHistogram
+IntHistogram	IntHistogram.java	/^public class IntHistogram {$/;"	c
+IntegerAggregator	IntegerAggregator.java	/^    public IntegerAggregator(int gbfield, Type gbfieldtype, int afield, Op what) {$/;"	m	class:IntegerAggregator
+IntegerAggregator	IntegerAggregator.java	/^public class IntegerAggregator implements Aggregator {$/;"	c
+JOIN	QueryPlanVisualizer.java	/^    static final String JOIN = "⨝";$/;"	f	class:QueryPlanVisualizer
+Join	Join.java	/^    public Join(JoinPredicate p, OpIterator child1, OpIterator child2) {$/;"	m	class:Join
+Join	Join.java	/^public class Join extends Operator {$/;"	c
+JoinOptimizer	JoinOptimizer.java	/^    public JoinOptimizer(LogicalPlan p, Vector<LogicalJoinNode> joins) {$/;"	m	class:JoinOptimizer
+JoinOptimizer	JoinOptimizer.java	/^public class JoinOptimizer {$/;"	c
+JoinPredicate	JoinPredicate.java	/^    public JoinPredicate(int field1, Predicate.Op op, int field2) {$/;"	m	class:JoinPredicate
+JoinPredicate	JoinPredicate.java	/^public class JoinPredicate implements Serializable {$/;"	c
+LEAF	BTreePageId.java	/^	public final static int LEAF = 2;$/;"	f	class:BTreePageId
+LESS_THAN	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+LESS_THAN_OR_EQ	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+LIKE	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+LOGFILENAME	Database.java	/^    private final static String LOGFILENAME = "log";$/;"	f	class:Database	file:
+LONG_SIZE	LogFile.java	/^    final static int LONG_SIZE = 8;$/;"	f	class:LogFile
+LogFile	LogFile.java	/^    public LogFile(File f) throws IOException {$/;"	m	class:LogFile
+LogFile	LogFile.java	/^public class LogFile {$/;"	c
+LogicalFilterNode	LogicalFilterNode.java	/^    public LogicalFilterNode(String table, String field, Predicate.Op pred, String constant) {$/;"	m	class:LogicalFilterNode
+LogicalFilterNode	LogicalFilterNode.java	/^public class LogicalFilterNode {$/;"	c
+LogicalJoinNode	LogicalJoinNode.java	/^    public LogicalJoinNode() {$/;"	m	class:LogicalJoinNode
+LogicalJoinNode	LogicalJoinNode.java	/^    public LogicalJoinNode(String table1, String table2, String joinField1, String joinField2, Predicate.Op pred) {$/;"	m	class:LogicalJoinNode
+LogicalJoinNode	LogicalJoinNode.java	/^public class LogicalJoinNode {$/;"	c
+LogicalPlan	LogicalPlan.java	/^    public LogicalPlan() {$/;"	m	class:LogicalPlan
+LogicalPlan	LogicalPlan.java	/^public class LogicalPlan {$/;"	c
+LogicalScanNode	LogicalScanNode.java	/^    public LogicalScanNode(int table, String tableAlias) {$/;"	m	class:LogicalScanNode
+LogicalScanNode	LogicalScanNode.java	/^public class LogicalScanNode {$/;"	c
+LogicalSelectListNode	LogicalSelectListNode.java	/^    public LogicalSelectListNode(String aggOp, String fname) {$/;"	m	class:LogicalSelectListNode
+LogicalSelectListNode	LogicalSelectListNode.java	/^public class LogicalSelectListNode {$/;"	c
+LogicalSubplanJoinNode	LogicalSubplanJoinNode.java	/^    public LogicalSubplanJoinNode(String table1, String joinField1, OpIterator sp, Predicate.Op pred) {$/;"	m	class:LogicalSubplanJoinNode
+LogicalSubplanJoinNode	LogicalSubplanJoinNode.java	/^public class LogicalSubplanJoinNode extends LogicalJoinNode {$/;"	c
+MAP_SIZE	HashEquiJoin.java	/^    public final static int MAP_SIZE = 20000;$/;"	f	class:HashEquiJoin
+MAX	Aggregator.java	/^        MIN, MAX, SUM, AVG, COUNT,$/;"	e	enum:Aggregator.Op	file:
+MAX_RAND_VALUE	BTreeUtility.java	/^	public static final int MAX_RAND_VALUE = 1 << 16;$/;"	f	class:BTreeUtility
+MIN	Aggregator.java	/^        MIN, MAX, SUM, AVG, COUNT,$/;"	e	enum:Aggregator.Op	file:
+NOT_EQUALS	Predicate.java	/^        EQUALS, GREATER_THAN, LESS_THAN, LESS_THAN_OR_EQ, GREATER_THAN_OR_EQ, LIKE, NOT_EQUALS;$/;"	e	enum:Predicate.Op	file:
+NO_CHECKPOINT_ID	LogFile.java	/^    static final long NO_CHECKPOINT_ID = -1;$/;"	f	class:LogFile
+NO_GROUPING	Aggregator.java	/^    static final int NO_GROUPING = -1;$/;"	f	interface:Aggregator
+NUM_HIST_BINS	TableStats.java	/^    static final int NUM_HIST_BINS = 100;$/;"	f	class:TableStats
+ORDERBY	QueryPlanVisualizer.java	/^    static final String ORDERBY = "o";$/;"	f	class:QueryPlanVisualizer
+Op	Aggregator.java	/^    public enum Op implements Serializable {$/;"	g	interface:Aggregator
+Op	Predicate.java	/^    public enum Op implements Serializable {$/;"	g	class:Predicate
+OpIterator	OpIterator.java	/^public interface OpIterator extends Serializable{$/;"	i
+Operator	Operator.java	/^public abstract class Operator implements OpIterator {$/;"	c
+OperatorCardinality	OperatorCardinality.java	/^public class OperatorCardinality {$/;"	c
+OrderBy	OrderBy.java	/^    public OrderBy(int orderbyField, boolean asc, OpIterator child) {$/;"	m	class:OrderBy
+OrderBy	OrderBy.java	/^public class OrderBy extends Operator {$/;"	c
+PAGE_SIZE	BTreeRootPtrPage.java	/^	public final static int PAGE_SIZE = 9;$/;"	f	class:BTreeRootPtrPage
+PROJECT	QueryPlanVisualizer.java	/^    static final String PROJECT = "π";$/;"	f	class:QueryPlanVisualizer
+Page	Page.java	/^public interface Page {$/;"	i
+PageId	PageId.java	/^public interface PageId {$/;"	i
+Parser	Parser.java	/^public class Parser {$/;"	c
+ParsingException	ParsingException.java	/^    public ParsingException(Exception e) {$/;"	m	class:ParsingException
+ParsingException	ParsingException.java	/^    public ParsingException(String string) {$/;"	m	class:ParsingException
+ParsingException	ParsingException.java	/^public class ParsingException extends Exception {$/;"	c
+Permissions	Permissions.java	/^  private Permissions(int permLevel) {$/;"	m	class:Permissions	file:
+Permissions	Permissions.java	/^public class Permissions {$/;"	c
+PlanCache	PlanCache.java	/^public class PlanCache {$/;"	c
+Predicate	Predicate.java	/^    public Predicate(int field, Op op, Field operand) {$/;"	m	class:Predicate
+Predicate	Predicate.java	/^public class Predicate implements Serializable {$/;"	c
+Project	Project.java	/^    public Project(ArrayList<Integer> fieldList, ArrayList<Type> typesList,$/;"	m	class:Project
+Project	Project.java	/^    public Project(ArrayList<Integer> fieldList, Type[] types,$/;"	m	class:Project
+Project	Project.java	/^public class Project extends Operator {$/;"	c
+Query	Query.java	/^    public Query(OpIterator root, TransactionId t) {$/;"	m	class:Query
+Query	Query.java	/^    public Query(TransactionId t) {$/;"	m	class:Query
+Query	Query.java	/^public class Query implements Serializable {$/;"	c
+QueryPlanVisualizer	QueryPlanVisualizer.java	/^public class QueryPlanVisualizer {$/;"	c
+READ_ONLY	Permissions.java	/^  public static final Permissions READ_ONLY = new Permissions(0);$/;"	f	class:Permissions
+READ_WRITE	Permissions.java	/^  public static final Permissions READ_WRITE = new Permissions(1);$/;"	f	class:Permissions
+RENAME	QueryPlanVisualizer.java	/^    static final String RENAME = "ρ";$/;"	f	class:QueryPlanVisualizer
+ROOT_PTR	BTreePageId.java	/^	public final static int ROOT_PTR = 0;$/;"	f	class:BTreePageId
+RecordId	RecordId.java	/^    public RecordId(PageId pid, int tupleno) {$/;"	m	class:RecordId
+RecordId	RecordId.java	/^public class RecordId implements Serializable {$/;"	c
+ReverseEntryComparator	BTreeFileEncoder.java	/^	public static class ReverseEntryComparator implements Comparator<BTreeEntry> {$/;"	c	class:BTreeFileEncoder
+SCAN	QueryPlanVisualizer.java	/^    static final String SCAN = "scan";$/;"	f	class:QueryPlanVisualizer
+SC_AVG	Aggregator.java	/^        SC_AVG;$/;"	e	enum:Aggregator.Op	file:
+SELECT	QueryPlanVisualizer.java	/^    static final String SELECT = "σ";$/;"	f	class:QueryPlanVisualizer
+SLEEP_TIME	Parser.java	/^    static final int SLEEP_TIME = 1000;$/;"	f	class:Parser
+SPACE	QueryPlanVisualizer.java	/^    static final String SPACE = "  ";$/;"	f	class:QueryPlanVisualizer
+SQL_COMMANDS	Parser.java	/^    public static final String[] SQL_COMMANDS = { "select", "from", "where",$/;"	f	class:Parser
+STRING_LEN	Type.java	/^    public static final int STRING_LEN = 128;$/;"	f	class:Type
+STRING_TYPE	Type.java	/^    }, STRING_TYPE() {$/;"	e	enum:Type	file:
+STRING_TYPE	Type.java	/^    }, STRING_TYPE() {$/;"	m	enum:Type
+SUM	Aggregator.java	/^        MIN, MAX, SUM, AVG, COUNT,$/;"	e	enum:Aggregator.Op	file:
+SUM_COUNT	Aggregator.java	/^        SUM_COUNT,$/;"	e	enum:Aggregator.Op	file:
+SeqScan	SeqScan.java	/^    public SeqScan(TransactionId tid, int tableId) {$/;"	m	class:SeqScan
+SeqScan	SeqScan.java	/^    public SeqScan(TransactionId tid, int tableid, String tableAlias) {$/;"	m	class:SeqScan
+SeqScan	SeqScan.java	/^public class SeqScan implements OpIterator {$/;"	c
+SimpleDb	SimpleDb.java	/^public class SimpleDb {$/;"	c
+StringAggregator	StringAggregator.java	/^    public StringAggregator(int gbfield, Type gbfieldtype, int afield, Op what) {$/;"	m	class:StringAggregator
+StringAggregator	StringAggregator.java	/^public class StringAggregator implements Aggregator {$/;"	c
+StringField	StringField.java	/^	public StringField(String s, int maxSize) {$/;"	m	class:StringField
+StringField	StringField.java	/^public class StringField implements Field {$/;"	c
+StringHistogram	StringHistogram.java	/^    public StringHistogram(int buckets) {$/;"	m	class:StringHistogram
+StringHistogram	StringHistogram.java	/^public class StringHistogram {$/;"	c
+SubTreeDescriptor	QueryPlanVisualizer.java	/^        SubTreeDescriptor(SubTreeDescriptor leftChild,$/;"	m	class:QueryPlanVisualizer.SubTreeDescriptor
+SubTreeDescriptor	QueryPlanVisualizer.java	/^    private static class SubTreeDescriptor {$/;"	c	class:QueryPlanVisualizer
+SubtreeSummary	BTreeChecker.java	/^        SubtreeSummary() {}$/;"	m	class:BTreeChecker.SubtreeSummary
+SubtreeSummary	BTreeChecker.java	/^        SubtreeSummary(BTreeLeafPage base, int depth) {$/;"	m	class:BTreeChecker.SubtreeSummary
+SubtreeSummary	BTreeChecker.java	/^    static class SubtreeSummary {$/;"	c	class:BTreeChecker
+TDItem	TupleDesc.java	/^        public TDItem(Type t, String n) {$/;"	m	class:TupleDesc.TDItem
+TDItem	TupleDesc.java	/^    public static class TDItem implements Serializable {$/;"	c	class:TupleDesc
+Table	Catalog.java	/^        public Table(DbFile file, String name, String pkeyField) {$/;"	m	class:Catalog.Table
+Table	Catalog.java	/^    private class Table {$/;"	c	class:Catalog
+TableStats	TableStats.java	/^    public TableStats(int tableid, int ioCostPerPage) {$/;"	m	class:TableStats
+TableStats	TableStats.java	/^public class TableStats {$/;"	c
+Transaction	Transaction.java	/^    public Transaction() {$/;"	m	class:Transaction
+Transaction	Transaction.java	/^public class Transaction {$/;"	c
+TransactionAbortedException	TransactionAbortedException.java	/^    public TransactionAbortedException() {$/;"	m	class:TransactionAbortedException
+TransactionAbortedException	TransactionAbortedException.java	/^public class TransactionAbortedException extends Exception {$/;"	c
+TransactionId	TransactionId.java	/^    public TransactionId() {$/;"	m	class:TransactionId
+TransactionId	TransactionId.java	/^public class TransactionId implements Serializable {$/;"	c
+Tuple	Tuple.java	/^    public Tuple(TupleDesc td) {$/;"	m	class:Tuple
+Tuple	Tuple.java	/^public class Tuple implements Serializable {$/;"	c
+TupleArrayIterator	Parser.java	/^    public TupleArrayIterator(ArrayList<Tuple> tups) {$/;"	m	class:TupleArrayIterator
+TupleArrayIterator	Parser.java	/^class TupleArrayIterator implements OpIterator {$/;"	c
+TupleComparator	BTreeFileEncoder.java	/^		public TupleComparator(int keyField) {$/;"	m	class:BTreeFileEncoder.TupleComparator
+TupleComparator	BTreeFileEncoder.java	/^	public static class TupleComparator implements Comparator<Tuple> {$/;"	c	class:BTreeFileEncoder
+TupleComparator	OrderBy.java	/^    public TupleComparator(int field, boolean asc) {$/;"	m	class:TupleComparator
+TupleComparator	OrderBy.java	/^class TupleComparator implements Comparator<Tuple> {$/;"	c
+TupleDesc	TupleDesc.java	/^    public TupleDesc(Type[] typeAr) {$/;"	m	class:TupleDesc
+TupleDesc	TupleDesc.java	/^    public TupleDesc(Type[] typeAr, String[] fieldAr) {$/;"	m	class:TupleDesc
+TupleDesc	TupleDesc.java	/^public class TupleDesc implements Serializable {$/;"	c
+TupleIterator	TupleIterator.java	/^    public TupleIterator(TupleDesc td, Iterable<Tuple> tuples) {$/;"	m	class:TupleIterator
+TupleIterator	TupleIterator.java	/^public class TupleIterator implements OpIterator {$/;"	c
+Type	Type.java	/^public enum Type implements Serializable {$/;"	g
+UPDATE_RECORD	LogFile.java	/^    static final int UPDATE_RECORD = 3;$/;"	f	class:LogFile
+Utility	Utility.java	/^public class Utility {$/;"	c
+_bufferpool	Database.java	/^    private final BufferPool _bufferpool;$/;"	f	class:Database	file:
+_catalog	Database.java	/^    private final Catalog _catalog;$/;"	f	class:Database	file:
+_instance	Database.java	/^    private static AtomicReference<Database> _instance = new AtomicReference<Database>(new Database());$/;"	f	class:Database	file:
+_logfile	Database.java	/^    private final LogFile _logfile;$/;"	f	class:Database	file:
+abort	Transaction.java	/^    public void abort() throws IOException {$/;"	m	class:Transaction
+addAggregate	LogicalPlan.java	/^    public void addAggregate(String op, String afield, String gfield) throws ParsingException {$/;"	m	class:LogicalPlan
+addFilter	LogicalPlan.java	/^    public void addFilter(String field, Predicate.Op p, String$/;"	m	class:LogicalPlan
+addJoin	LogicalPlan.java	/^    public void addJoin( String joinField1, String joinField2, Predicate.Op pred) throws ParsingException {$/;"	m	class:LogicalPlan
+addJoin	LogicalPlan.java	/^    public void addJoin(String joinField1, OpIterator joinField2, Predicate.Op pred) throws ParsingException {$/;"	m	class:LogicalPlan
+addOrderBy	LogicalPlan.java	/^    public void addOrderBy(String field, boolean asc) throws ParsingException {$/;"	m	class:LogicalPlan
+addPlan	PlanCache.java	/^    void addPlan(Set<LogicalJoinNode> s, double cost, int card, Vector<LogicalJoinNode> order) {$/;"	m	class:PlanCache
+addProjectField	LogicalPlan.java	/^    public void addProjectField(String fname, String aggOp) throws ParsingException {$/;"	m	class:LogicalPlan
+addScan	LogicalPlan.java	/^    public void addScan(int table, String name) {$/;"	m	class:LogicalPlan
+addTable	Catalog.java	/^    public void addTable(DbFile file) {$/;"	m	class:Catalog
+addTable	Catalog.java	/^    public void addTable(DbFile file, String name) {$/;"	m	class:Catalog
+addTable	Catalog.java	/^    public void addTable(DbFile file, String name, String pkeyField) {$/;"	m	class:Catalog
+addValue	IntHistogram.java	/^    public void addValue(int v) {$/;"	m	class:IntHistogram
+addValue	StringHistogram.java	/^    public void addValue(String s) {$/;"	m	class:StringHistogram
+aggField	LogicalPlan.java	/^    private String aggField;$/;"	f	class:LogicalPlan	file:
+aggOp	LogicalPlan.java	/^    private String aggOp;$/;"	f	class:LogicalPlan	file:
+aggOp	LogicalSelectListNode.java	/^    public String aggOp;$/;"	f	class:LogicalSelectListNode
+aggregateField	Aggregate.java	/^    public int aggregateField() {$/;"	m	class:Aggregate
+aggregateFieldName	Aggregate.java	/^    public String aggregateFieldName() {$/;"	m	class:Aggregate
+aggregateOp	Aggregate.java	/^    public Aggregator.Op aggregateOp() {$/;"	m	class:Aggregate
+alias	BTreeScan.java	/^	private String alias;$/;"	f	class:BTreeScan	file:
+alias	LogicalScanNode.java	/^    public String alias;$/;"	f	class:LogicalScanNode
+asc	OrderBy.java	/^    boolean asc;$/;"	f	class:TupleComparator
+asc	OrderBy.java	/^    private boolean asc;$/;"	f	class:OrderBy	file:
+avgSelectivity	IntHistogram.java	/^    public double avgSelectivity()$/;"	m	class:IntHistogram
+avgSelectivity	StringHistogram.java	/^    public double avgSelectivity() {$/;"	m	class:StringHistogram
+avgSelectivity	TableStats.java	/^    public double avgSelectivity(int field, Predicate.Op op) {$/;"	m	class:TableStats
+bestCardinalities	PlanCache.java	/^    HashMap<Set<LogicalJoinNode>,Integer> bestCardinalities = new HashMap<Set<LogicalJoinNode>,Integer>();$/;"	f	class:PlanCache
+bestCosts	PlanCache.java	/^    HashMap<Set<LogicalJoinNode>,Double> bestCosts= new HashMap<Set<LogicalJoinNode>,Double>();$/;"	f	class:PlanCache
+bestOrders	PlanCache.java	/^    HashMap<Set<LogicalJoinNode>,Vector<LogicalJoinNode>> bestOrders= new HashMap<Set<LogicalJoinNode>,Vector<LogicalJoinNode>>();$/;"	f	class:PlanCache
+bf	BTreeUtility.java	/^		BTreeFile bf;$/;"	f	class:BTreeUtility.BTreeDeleter
+bf	BTreeUtility.java	/^		BTreeFile bf;$/;"	f	class:BTreeUtility.BTreeInserter
+bf	BTreeUtility.java	/^		BTreeFile bf;$/;"	f	class:BTreeUtility.BTreeReader
+bf	BTreeUtility.java	/^		BTreeFile bf;$/;"	f	class:BTreeUtility.BTreeWriter
+buildTree	QueryPlanVisualizer.java	/^    private SubTreeDescriptor buildTree(int queryPlanDepth, int currentDepth,$/;"	m	class:QueryPlanVisualizer	file:
+c	LogicalFilterNode.java	/^    public String c;$/;"	f	class:LogicalFilterNode
+calculateQueryPlanTreeDepth	QueryPlanVisualizer.java	/^    private int calculateQueryPlanTreeDepth(OpIterator root) {$/;"	m	class:QueryPlanVisualizer	file:
+card	CostCard.java	/^    public int card;$/;"	f	class:CostCard
+categToString	BTreePageId.java	/^	static public String categToString(int categ) {$/;"	m	class:BTreePageId
+checkAndMerge	BTreeChecker.java	/^        static SubtreeSummary checkAndMerge(SubtreeSummary accleft, SubtreeSummary right) {$/;"	m	class:BTreeChecker.SubtreeSummary
+checkRep	BTreeChecker.java	/^    public static void checkRep(BTreeFile bt, TransactionId tid, HashMap<PageId, Page> dirtypages,$/;"	m	class:BTreeChecker
+checkRep	BTreeInternalPage.java	/^	public void checkRep(Field lowerBound, Field upperBound, boolean checkOccupancy, int depth) {$/;"	m	class:BTreeInternalPage
+checkRep	BTreeLeafPage.java	/^	public void checkRep(int fieldid, Field lowerBound, Field upperBound, boolean checkoccupancy, int depth) {$/;"	m	class:BTreeLeafPage
+checkSubTree	BTreeChecker.java	/^    static SubtreeSummary checkSubTree(BTreeFile bt, TransactionId tid, HashMap<PageId, Page> dirtypages,$/;"	m	class:BTreeChecker
+child	OrderBy.java	/^    private OpIterator child;$/;"	f	class:OrderBy	file:
+child	Project.java	/^    private OpIterator child;$/;"	f	class:Project	file:
+child1	HashEquiJoin.java	/^    private OpIterator child1, child2;$/;"	f	class:HashEquiJoin	file:
+child2	HashEquiJoin.java	/^    private OpIterator child1, child2;$/;"	f	class:HashEquiJoin	file:
+childCategory	BTreeInternalPage.java	/^	private int childCategory; \/\/ either leaf or internal$/;"	f	class:BTreeInternalPage	file:
+childTups	OrderBy.java	/^    private ArrayList<Tuple> childTups = new ArrayList<Tuple>();$/;"	f	class:OrderBy	file:
+children	BTreeInternalPage.java	/^	private final int children[];$/;"	f	class:BTreeInternalPage	file:
+cleanUpEntries	BTreeFileEncoder.java	/^	private static void cleanUpEntries(ArrayList<ArrayList<BTreeEntry>> entries,$/;"	m	class:BTreeFileEncoder	file:
+clear	Catalog.java	/^    public void clear() {$/;"	m	class:Catalog
+close	AbstractDbFileIterator.java	/^    public void close() {$/;"	m	class:AbstractDbFileIterator
+close	Aggregate.java	/^    public void close() {$/;"	m	class:Aggregate
+close	BTreeFile.java	/^	public void close() {$/;"	m	class:BTreeFileIterator
+close	BTreeFile.java	/^	public void close() {$/;"	m	class:BTreeSearchIterator
+close	BTreeScan.java	/^	public void close() {$/;"	m	class:BTreeScan
+close	DbFileIterator.java	/^    public void close();$/;"	m	interface:DbFileIterator
+close	Delete.java	/^    public void close() {$/;"	m	class:Delete
+close	Filter.java	/^    public void close() {$/;"	m	class:Filter
+close	HashEquiJoin.java	/^    public void close() {$/;"	m	class:HashEquiJoin
+close	Insert.java	/^    public void close() {$/;"	m	class:Insert
+close	Join.java	/^    public void close() {$/;"	m	class:Join
+close	OpIterator.java	/^  public void close();$/;"	m	interface:OpIterator
+close	Operator.java	/^    public void close() {$/;"	m	class:Operator
+close	OrderBy.java	/^    public void close() {$/;"	m	class:OrderBy
+close	Parser.java	/^    public void close() {$/;"	m	class:TupleArrayIterator
+close	Project.java	/^    public void close() {$/;"	m	class:Project
+close	Query.java	/^    public void close() throws IOException {$/;"	m	class:Query
+close	SeqScan.java	/^    public void close() {$/;"	m	class:SeqScan
+close	TupleIterator.java	/^    public void close() {$/;"	m	class:TupleIterator
+comboTD	HashEquiJoin.java	/^    private TupleDesc comboTD;$/;"	f	class:HashEquiJoin	file:
+commit	Transaction.java	/^    public void commit() throws IOException {$/;"	m	class:Transaction
+compare	BTreeFileEncoder.java	/^		public int compare(BTreeEntry e1, BTreeEntry e2) {$/;"	m	class:BTreeFileEncoder.EntryComparator
+compare	BTreeFileEncoder.java	/^		public int compare(BTreeEntry e1, BTreeEntry e2) {$/;"	m	class:BTreeFileEncoder.ReverseEntryComparator
+compare	BTreeFileEncoder.java	/^		public int compare(Tuple t1, Tuple t2) {$/;"	m	class:BTreeFileEncoder.TupleComparator
+compare	Field.java	/^    public boolean compare(Predicate.Op op, Field value);$/;"	m	interface:Field
+compare	IntField.java	/^    public boolean compare(Predicate.Op op, Field val) {$/;"	m	class:IntField
+compare	OrderBy.java	/^    public int compare(Tuple o1, Tuple o2) {$/;"	m	class:TupleComparator
+compare	StringField.java	/^	public boolean compare(Predicate.Op op, Field val) {$/;"	m	class:StringField
+computeCostAndCardOfSubplan	JoinOptimizer.java	/^    private CostCard computeCostAndCardOfSubplan($/;"	m	class:JoinOptimizer	file:
+computeStatistics	TableStats.java	/^    public static void computeStatistics() {$/;"	m	class:TableStats
+convert	BTreeFileEncoder.java	/^	public static BTreeFile convert(ArrayList<ArrayList<Integer>> tuples, File hFile, $/;"	m	class:BTreeFileEncoder
+convert	BTreeFileEncoder.java	/^	public static BTreeFile convert(File inFile, File hFile, File bFile, int npagebytes,$/;"	m	class:BTreeFileEncoder
+convert	BTreeFileEncoder.java	/^	public static BTreeFile convert(File inFile, File hFile, File bFile,$/;"	m	class:BTreeFileEncoder
+convert	HeapFileEncoder.java	/^      public static void convert(File inFile, File outFile, int npagebytes,$/;"	m	class:HeapFileEncoder
+convert	HeapFileEncoder.java	/^  public static void convert(ArrayList<ArrayList<Integer>> tuples, File outFile, int npagebytes, int numFields) throws IOException {$/;"	m	class:HeapFileEncoder
+convert	HeapFileEncoder.java	/^  public static void convert(File inFile, File outFile, int npagebytes,$/;"	m	class:HeapFileEncoder
+convertToInternalPage	BTreeFileEncoder.java	/^	public static byte[] convertToInternalPage(ArrayList<BTreeEntry> entries, int npagebytes,$/;"	m	class:BTreeFileEncoder
+convertToLeafPage	BTreeFileEncoder.java	/^	public static byte[] convertToLeafPage(ArrayList<Tuple> tuples, int npagebytes,$/;"	m	class:BTreeFileEncoder
+convertToRootPtrPage	BTreeFileEncoder.java	/^	public static byte[] convertToRootPtrPage(int root, int rootCategory, int header)$/;"	m	class:BTreeFileEncoder
+cost	CostCard.java	/^    public double cost;$/;"	f	class:CostCard
+count	BTreeUtility.java	/^		int count;$/;"	f	class:BTreeUtility.BTreeReader
+count	BTreeUtility.java	/^		int count;$/;"	f	class:BTreeUtility.BTreeWriter
+counter	TransactionId.java	/^    static AtomicLong counter = new AtomicLong(0);$/;"	f	class:TransactionId
+createBTreeFile	BTreeUtility.java	/^	public static BTreeFile createBTreeFile(int columns, int rows,$/;"	m	class:BTreeUtility
+createEmptyBTreeFile	BTreeUtility.java	/^	public static BTreeFile createEmptyBTreeFile(String path, int cols, int keyField)$/;"	m	class:BTreeUtility
+createEmptyBTreeFile	BTreeUtility.java	/^	public static BTreeFile createEmptyBTreeFile(String path, int cols, int keyField, int pages)$/;"	m	class:BTreeUtility
+createEmptyHeapFile	Utility.java	/^    public static HeapFile createEmptyHeapFile(String path, int cols)$/;"	m	class:Utility
+createEmptyPageData	BTreeHeaderPage.java	/^	public static byte[] createEmptyPageData() {$/;"	m	class:BTreeHeaderPage
+createEmptyPageData	BTreePage.java	/^	public static byte[] createEmptyPageData() {$/;"	m	class:BTreePage
+createEmptyPageData	BTreeRootPtrPage.java	/^	public static byte[] createEmptyPageData() {$/;"	m	class:BTreeRootPtrPage
+createEmptyPageData	HeapPage.java	/^    public static byte[] createEmptyPageData() {$/;"	m	class:HeapPage
+createRandomBTreeFile	BTreeUtility.java	/^	public static BTreeFile createRandomBTreeFile($/;"	m	class:BTreeUtility
+createRandomBTreeFile	BTreeUtility.java	/^	public static BTreeFile createRandomBTreeFile(int columns, int rows,$/;"	m	class:BTreeUtility
+createRandomInternalPage	BTreeUtility.java	/^	public static BTreeInternalPage createRandomInternalPage(BTreePageId pid, int keyField, int childPageCategory, int minKey, int maxKey, int minChildPtr) throws IOException {$/;"	m	class:BTreeUtility
+createRandomInternalPage	BTreeUtility.java	/^	public static BTreeInternalPage createRandomInternalPage(BTreePageId pid, int keyField, int childPageCategory, int numKeys, int minKey, int maxKey, int minChildPtr) throws IOException {$/;"	m	class:BTreeUtility
+createRandomLeafPage	BTreeUtility.java	/^	public static BTreeLeafPage createRandomLeafPage(BTreePageId pid, int columns, int keyField, int min, int max) throws IOException {$/;"	m	class:BTreeUtility
+createRandomLeafPage	BTreeUtility.java	/^	public static BTreeLeafPage createRandomLeafPage(BTreePageId pid, int columns, int keyField, int numTuples, int min, int max) throws IOException {$/;"	m	class:BTreeUtility
+curEntry	BTreeInternalPage.java	/^	int curEntry = 1;$/;"	f	class:BTreeInternalPageIterator
+curEntry	BTreeInternalPage.java	/^	int curEntry;$/;"	f	class:BTreeInternalPageReverseIterator
+curTuple	BTreeLeafPage.java	/^	int curTuple = 0;$/;"	f	class:BTreeLeafPageIterator
+curTuple	BTreeLeafPage.java	/^	int curTuple;$/;"	f	class:BTreeLeafPageReverseIterator
+curp	BTreeFile.java	/^	BTreeLeafPage curp = null;$/;"	f	class:BTreeFileIterator
+curp	BTreeFile.java	/^	BTreeLeafPage curp = null;$/;"	f	class:BTreeSearchIterator
+currentOffset	LogFile.java	/^    long currentOffset = -1;\/\/protected by this$/;"	f	class:LogFile
+curtrans	Parser.java	/^    private Transaction curtrans = null;$/;"	f	class:Parser	file:
+deleteEntry	BTreeInternalPage.java	/^	private void deleteEntry(BTreeEntry e, boolean deleteRightChild) throws DbException {$/;"	m	class:BTreeInternalPage	file:
+deleteKeyAndLeftChild	BTreeInternalPage.java	/^	public void deleteKeyAndLeftChild(BTreeEntry e) throws DbException {$/;"	m	class:BTreeInternalPage
+deleteKeyAndRightChild	BTreeInternalPage.java	/^	public void deleteKeyAndRightChild(BTreeEntry e) throws DbException {$/;"	m	class:BTreeInternalPage
+deleteParentEntry	BTreeFile.java	/^	private void deleteParentEntry(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile	file:
+deleteTuple	BTreeFile.java	/^	public ArrayList<Page> deleteTuple(TransactionId tid, Tuple t) $/;"	m	class:BTreeFile
+deleteTuple	BTreeLeafPage.java	/^	public void deleteTuple(Tuple t) throws DbException {$/;"	m	class:BTreeLeafPage
+deleteTuple	BufferPool.java	/^    public  void deleteTuple(TransactionId tid, Tuple t)$/;"	m	class:BufferPool
+deleteTuple	DbFile.java	/^    public ArrayList<Page> deleteTuple(TransactionId tid, Tuple t)$/;"	m	interface:DbFile
+deleteTuple	HeapFile.java	/^    public ArrayList<Page> deleteTuple(TransactionId tid, Tuple t) throws DbException,$/;"	m	class:HeapFile
+deleteTuple	HeapPage.java	/^    public void deleteTuple(Tuple t) throws DbException {$/;"	m	class:HeapPage
+depth	BTreeChecker.java	/^        public int depth;$/;"	f	class:BTreeChecker.SubtreeSummary
+dirtier	BTreeHeaderPage.java	/^	private volatile TransactionId dirtier = null;$/;"	f	class:BTreeHeaderPage	file:
+dirtier	BTreePage.java	/^	protected volatile TransactionId dirtier = null;$/;"	f	class:BTreePage
+dirtier	BTreeRootPtrPage.java	/^	private TransactionId dirtier = null;$/;"	f	class:BTreeRootPtrPage	file:
+dirty	BTreeHeaderPage.java	/^	private volatile boolean dirty = false;$/;"	f	class:BTreeHeaderPage	file:
+dirty	BTreePage.java	/^	protected volatile boolean dirty = false;$/;"	f	class:BTreePage
+dirty	BTreeRootPtrPage.java	/^	private boolean dirty = false;$/;"	f	class:BTreeRootPtrPage	file:
+dis	BTreeRootPtrPage.java	/^	private DataInputStream dis;$/;"	f	class:BTreeRootPtrPage	file:
+disambiguateName	LogicalPlan.java	/^    String disambiguateName(String name) throws ParsingException {$/;"	m	class:LogicalPlan
+discardPage	BufferPool.java	/^    public synchronized void discardPage(PageId pid) {$/;"	m	class:BufferPool
+doesJoin	JoinOptimizer.java	/^    private boolean doesJoin(Vector<LogicalJoinNode> joinlist, String table) {$/;"	m	class:JoinOptimizer	file:
+elock	BTreeUtility.java	/^		Object elock;$/;"	f	class:BTreeUtility.BTreeDeleter
+elock	BTreeUtility.java	/^		Object elock;$/;"	f	class:BTreeUtility.BTreeInserter
+elock	BTreeUtility.java	/^		Object elock;$/;"	f	class:BTreeUtility.BTreeReader
+elock	BTreeUtility.java	/^		Object elock;$/;"	f	class:BTreeUtility.BTreeWriter
+enumerateSubsets	JoinOptimizer.java	/^    public <T> Set<Set<T>> enumerateSubsets(Vector<T> v, int size) {$/;"	m	class:JoinOptimizer
+equals	BTreePageId.java	/^	public boolean equals(Object o) {$/;"	m	class:BTreePageId
+equals	Field.java	/^    public boolean equals(Object field);$/;"	m	interface:Field
+equals	HeapPageId.java	/^    public boolean equals(Object o) {$/;"	m	class:HeapPageId
+equals	IndexPredicate.java	/^    public boolean equals(IndexPredicate ipd) {$/;"	m	class:IndexPredicate
+equals	IntField.java	/^    public boolean equals(Object field) {$/;"	m	class:IntField
+equals	LogicalJoinNode.java	/^    @Override public boolean equals(Object o) {$/;"	m	class:LogicalJoinNode
+equals	LogicalSubplanJoinNode.java	/^    @Override public boolean equals(Object o) {$/;"	m	class:LogicalSubplanJoinNode
+equals	PageId.java	/^    public boolean equals(Object o);$/;"	m	interface:PageId
+equals	RecordId.java	/^    public boolean equals(Object o) {$/;"	m	class:RecordId
+equals	StringField.java	/^	public boolean equals(Object field) {$/;"	m	class:StringField
+equals	TransactionId.java	/^	public boolean equals(Object obj) {$/;"	m	class:TransactionId
+equals	TupleDesc.java	/^    public boolean equals(Object o) {$/;"	m	class:TupleDesc
+error	BTreeUtility.java	/^		Exception error;$/;"	f	class:BTreeUtility.BTreeDeleter
+error	BTreeUtility.java	/^		Exception error;$/;"	f	class:BTreeUtility.BTreeInserter
+error	BTreeUtility.java	/^		Exception error;$/;"	f	class:BTreeUtility.BTreeReader
+error	BTreeUtility.java	/^		Exception error;$/;"	f	class:BTreeUtility.BTreeWriter
+estimateJoinCardinality	JoinOptimizer.java	/^    public int estimateJoinCardinality(LogicalJoinNode j, int card1, int card2,$/;"	m	class:JoinOptimizer
+estimateJoinCost	JoinOptimizer.java	/^    public double estimateJoinCost(LogicalJoinNode j, int card1, int card2,$/;"	m	class:JoinOptimizer
+estimateScanCost	TableStats.java	/^    public double estimateScanCost() {$/;"	m	class:TableStats
+estimateSelectivity	IntHistogram.java	/^    public double estimateSelectivity(Predicate.Op op, int v) {$/;"	m	class:IntHistogram
+estimateSelectivity	StringHistogram.java	/^    public double estimateSelectivity(Predicate.Op op, String s) {$/;"	m	class:StringHistogram
+estimateSelectivity	TableStats.java	/^    public double estimateSelectivity(int field, Predicate.Op op, Field constant) {$/;"	m	class:TableStats
+estimateTableCardinality	TableStats.java	/^    public int estimateTableCardinality(double selectivityFactor) {$/;"	m	class:TableStats
+estimateTableJoinCardinality	JoinOptimizer.java	/^    public static int estimateTableJoinCardinality(Predicate.Op joinOp,$/;"	m	class:JoinOptimizer
+estimatedCardinality	Operator.java	/^    private int estimatedCardinality = 0;$/;"	f	class:Operator	file:
+evictPage	BufferPool.java	/^    private synchronized  void evictPage() throws DbException {$/;"	m	class:BufferPool	file:
+execute	Query.java	/^    public void execute() throws IOException, DbException, TransactionAbortedException {$/;"	m	class:Query
+explain	Parser.java	/^    static boolean explain = false;$/;"	f	class:Parser
+f	BTreeFile.java	/^	BTreeFile f;$/;"	f	class:BTreeFileIterator
+f	BTreeFile.java	/^	BTreeFile f;$/;"	f	class:BTreeSearchIterator
+f	BTreeFile.java	/^	private final File f;$/;"	f	class:BTreeFile	file:
+f	BTreeUtility.java	/^		Field f;$/;"	f	class:BTreeUtility.BTreeReader
+f1PureName	LogicalJoinNode.java	/^    public String f1PureName;$/;"	f	class:LogicalJoinNode
+f1QuantifiedName	LogicalJoinNode.java	/^    public String f1QuantifiedName;$/;"	f	class:LogicalJoinNode
+f2PureName	LogicalJoinNode.java	/^    public String f2PureName;$/;"	f	class:LogicalJoinNode
+f2QuantifiedName	LogicalJoinNode.java	/^    public String f2QuantifiedName;$/;"	f	class:LogicalJoinNode
+fetchNext	Aggregate.java	/^    protected Tuple fetchNext() throws TransactionAbortedException, DbException {$/;"	m	class:Aggregate
+fetchNext	Delete.java	/^    protected Tuple fetchNext() throws TransactionAbortedException, DbException {$/;"	m	class:Delete
+fetchNext	Filter.java	/^    protected Tuple fetchNext() throws NoSuchElementException,$/;"	m	class:Filter
+fetchNext	HashEquiJoin.java	/^    protected Tuple fetchNext() throws TransactionAbortedException, DbException {$/;"	m	class:HashEquiJoin
+fetchNext	Insert.java	/^    protected Tuple fetchNext() throws TransactionAbortedException, DbException {$/;"	m	class:Insert
+fetchNext	Join.java	/^    protected Tuple fetchNext() throws TransactionAbortedException, DbException {$/;"	m	class:Join
+fetchNext	Operator.java	/^    protected abstract Tuple fetchNext() throws DbException,$/;"	m	class:Operator
+fetchNext	OrderBy.java	/^    protected Tuple fetchNext() throws NoSuchElementException,$/;"	m	class:OrderBy
+fetchNext	Project.java	/^    protected Tuple fetchNext() throws NoSuchElementException,$/;"	m	class:Project
+field	OrderBy.java	/^    int field;$/;"	f	class:TupleComparator
+fieldName	TupleDesc.java	/^        public final String fieldName;$/;"	f	class:TupleDesc.TDItem
+fieldNameToIndex	TupleDesc.java	/^    public int fieldNameToIndex(String name) throws NoSuchElementException {$/;"	m	class:TupleDesc
+fieldPureName	LogicalFilterNode.java	/^    public String fieldPureName;$/;"	f	class:LogicalFilterNode
+fieldQuantifiedName	LogicalFilterNode.java	/^    public String fieldQuantifiedName;$/;"	f	class:LogicalFilterNode
+fieldType	TupleDesc.java	/^        public final Type fieldType;$/;"	f	class:TupleDesc.TDItem
+fields	Tuple.java	/^    Map<Integer, Field> fields;$/;"	f	class:Tuple
+fields	Tuple.java	/^    public Iterator<Field> fields()$/;"	m	class:Tuple
+fieldvalue	IndexPredicate.java	/^    private Field fieldvalue;$/;"	f	class:IndexPredicate	file:
+file	Catalog.java	/^        public DbFile file;$/;"	f	class:Catalog.Table
+filter	JoinPredicate.java	/^    public boolean filter(Tuple t1, Tuple t2) {$/;"	m	class:JoinPredicate
+filter	Predicate.java	/^    public boolean filter(Tuple t) {$/;"	m	class:Predicate
+filters	LogicalPlan.java	/^    private Vector<LogicalFilterNode> filters;$/;"	f	class:LogicalPlan	file:
+findLeafPage	BTreeFile.java	/^	BTreeLeafPage findLeafPage(TransactionId tid, BTreePageId pid, Permissions perm,$/;"	m	class:BTreeFile
+findLeafPage	BTreeFile.java	/^	private BTreeLeafPage findLeafPage(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreePageId pid, Permissions perm,$/;"	m	class:BTreeFile	file:
+flushAllPages	BufferPool.java	/^    public synchronized void flushAllPages() throws IOException {$/;"	m	class:BufferPool
+flushPage	BufferPool.java	/^    private synchronized  void flushPage(PageId pid) throws IOException {$/;"	m	class:BufferPool	file:
+flushPages	BufferPool.java	/^    public synchronized  void flushPages(TransactionId tid) throws IOException {$/;"	m	class:BufferPool
+fname	LogicalSelectListNode.java	/^    public String fname;$/;"	f	class:LogicalSelectListNode
+force	LogFile.java	/^    public  synchronized void force() throws IOException {$/;"	m	class:LogFile
+found	BTreeUtility.java	/^		 public boolean found() {$/;"	m	class:BTreeUtility.BTreeReader
+found	BTreeUtility.java	/^		boolean found;$/;"	f	class:BTreeUtility.BTreeReader
+generateLogicalPlan	Parser.java	/^    public LogicalPlan generateLogicalPlan(TransactionId tid, String s)$/;"	m	class:Parser
+generateRandomEntries	BTreeUtility.java	/^	public static ArrayList<BTreeEntry> generateRandomEntries(int numKeys, int tableid, int childPageCategory, int minKey, int maxKey, int minChildPtr) {$/;"	m	class:BTreeUtility
+generateRandomEntries	BTreeUtility.java	/^	public static void generateRandomEntries(int numKeys, int minKey, int maxKey, int minChildPtr,$/;"	m	class:BTreeUtility
+generateRandomTuples	BTreeUtility.java	/^	public static ArrayList<Tuple> generateRandomTuples(int columns, int rows, int min, int max) {$/;"	m	class:BTreeUtility
+generateRandomTuples	BTreeUtility.java	/^	public static void generateRandomTuples(int columns, int rows,$/;"	m	class:BTreeUtility
+getAggOp	LogicalPlan.java	/^    static Aggregator.Op getAggOp(String s) throws ParsingException {$/;"	m	class:LogicalPlan
+getAlias	BTreeScan.java	/^	public String getAlias()$/;"	m	class:BTreeScan
+getAlias	SeqScan.java	/^    public String getAlias()$/;"	m	class:SeqScan
+getBTreeEntry	BTreeUtility.java	/^	public static BTreeEntry getBTreeEntry(int n) {$/;"	m	class:BTreeUtility
+getBTreeEntry	BTreeUtility.java	/^	public static BTreeEntry getBTreeEntry(int n, int key, int tableid) {$/;"	m	class:BTreeUtility
+getBTreeEntry	BTreeUtility.java	/^	public static BTreeEntry getBTreeEntry(int n, int tableid) {$/;"	m	class:BTreeUtility
+getBTreeTuple	BTreeUtility.java	/^	public static Tuple getBTreeTuple(ArrayList<Integer> tupdata) {$/;"	m	class:BTreeUtility
+getBTreeTuple	BTreeUtility.java	/^	public static Tuple getBTreeTuple(int n) {$/;"	m	class:BTreeUtility
+getBTreeTuple	BTreeUtility.java	/^	public static Tuple getBTreeTuple(int n, int width) {$/;"	m	class:BTreeUtility
+getBTreeTuple	BTreeUtility.java	/^	public static Tuple getBTreeTuple(int[] tupdata) {$/;"	m	class:BTreeUtility
+getBeforeImage	BTreeHeaderPage.java	/^	public BTreeHeaderPage getBeforeImage(){$/;"	m	class:BTreeHeaderPage
+getBeforeImage	BTreeInternalPage.java	/^	public BTreeInternalPage getBeforeImage(){$/;"	m	class:BTreeInternalPage
+getBeforeImage	BTreeLeafPage.java	/^	public BTreeLeafPage getBeforeImage(){$/;"	m	class:BTreeLeafPage
+getBeforeImage	BTreeRootPtrPage.java	/^	public BTreeRootPtrPage getBeforeImage(){$/;"	m	class:BTreeRootPtrPage
+getBeforeImage	HeapPage.java	/^    public HeapPage getBeforeImage(){$/;"	m	class:HeapPage
+getBeforeImage	Page.java	/^    public Page getBeforeImage();$/;"	m	interface:Page
+getBufferPool	Database.java	/^    public static BufferPool getBufferPool() {$/;"	m	class:Database
+getCard	PlanCache.java	/^    int getCard(Set<LogicalJoinNode> s) {$/;"	m	class:PlanCache
+getCatalog	Database.java	/^    public static Catalog getCatalog() {$/;"	m	class:Database
+getChildId	BTreeInternalPage.java	/^	protected BTreePageId getChildId(int i) throws NoSuchElementException {$/;"	m	class:BTreeInternalPage
+getChildren	Aggregate.java	/^    public OpIterator[] getChildren() {$/;"	m	class:Aggregate
+getChildren	Delete.java	/^    public OpIterator[] getChildren() {$/;"	m	class:Delete
+getChildren	Filter.java	/^    public OpIterator[] getChildren() {$/;"	m	class:Filter
+getChildren	HashEquiJoin.java	/^    public OpIterator[] getChildren() {$/;"	m	class:HashEquiJoin
+getChildren	Insert.java	/^    public OpIterator[] getChildren() {$/;"	m	class:Insert
+getChildren	Join.java	/^    public OpIterator[] getChildren() {$/;"	m	class:Join
+getChildren	Operator.java	/^    public abstract OpIterator[] getChildren();$/;"	m	class:Operator
+getChildren	OrderBy.java	/^    public OpIterator[] getChildren() {$/;"	m	class:OrderBy
+getChildren	Project.java	/^    public OpIterator[] getChildren() {$/;"	m	class:Project
+getCost	PlanCache.java	/^    double getCost(Set<LogicalJoinNode> s) {$/;"	m	class:PlanCache
+getDatabaseFile	Catalog.java	/^    public DbFile getDatabaseFile(int tableid) throws NoSuchElementException {$/;"	m	class:Catalog
+getEmptyPage	BTreeFile.java	/^	private Page getEmptyPage(TransactionId tid, HashMap<PageId, Page> dirtypages, int pgcateg)$/;"	m	class:BTreeFile	file:
+getEmptyPageNo	BTreeFile.java	/^	protected int getEmptyPageNo(TransactionId tid, HashMap<PageId, Page> dirtypages) $/;"	m	class:BTreeFile
+getEmptySlot	BTreeHeaderPage.java	/^	public int getEmptySlot() {$/;"	m	class:BTreeHeaderPage
+getError	BTreeUtility.java	/^		 public Exception getError() {$/;"	m	class:BTreeUtility.BTreeDeleter
+getError	BTreeUtility.java	/^		 public Exception getError() {$/;"	m	class:BTreeUtility.BTreeInserter
+getError	BTreeUtility.java	/^		 public Exception getError() {$/;"	m	class:BTreeUtility.BTreeReader
+getError	BTreeUtility.java	/^		 public Exception getError() {$/;"	m	class:BTreeUtility.BTreeWriter
+getEstimatedCardinality	Operator.java	/^    public int getEstimatedCardinality() {$/;"	m	class:Operator
+getField	IndexPredicate.java	/^    public Field getField() {$/;"	m	class:IndexPredicate
+getField	Predicate.java	/^    public int getField()$/;"	m	class:Predicate
+getField	Tuple.java	/^    public Field getField(int i) {$/;"	m	class:Tuple
+getField1	JoinPredicate.java	/^    public int getField1()$/;"	m	class:JoinPredicate
+getField2	JoinPredicate.java	/^    public int getField2()$/;"	m	class:JoinPredicate
+getFieldName	TupleDesc.java	/^    public String getFieldName(int i) throws NoSuchElementException {$/;"	m	class:TupleDesc
+getFieldType	TupleDesc.java	/^    public Type getFieldType(int i) throws NoSuchElementException {$/;"	m	class:TupleDesc
+getFile	BTreeFile.java	/^	public File getFile() {$/;"	m	class:BTreeFile
+getFile	HeapFile.java	/^    public File getFile() {$/;"	m	class:HeapFile
+getHeaderId	BTreeRootPtrPage.java	/^	public BTreePageId getHeaderId() {$/;"	m	class:BTreeRootPtrPage
+getHeaderSize	BTreeHeaderPage.java	/^	private static int getHeaderSize() {        $/;"	m	class:BTreeHeaderPage	file:
+getHeaderSize	BTreeInternalPage.java	/^	private int getHeaderSize() {        $/;"	m	class:BTreeInternalPage	file:
+getHeaderSize	BTreeLeafPage.java	/^	private int getHeaderSize() {        $/;"	m	class:BTreeLeafPage	file:
+getHeaderSize	HeapPage.java	/^    private int getHeaderSize() {        $/;"	m	class:HeapPage	file:
+getHeapTuple	Utility.java	/^    public static Tuple getHeapTuple(int n) {$/;"	m	class:Utility
+getHeapTuple	Utility.java	/^    public static Tuple getHeapTuple(int n, int width) {$/;"	m	class:Utility
+getHeapTuple	Utility.java	/^    public static Tuple getHeapTuple(int[] tupdata) {$/;"	m	class:Utility
+getId	BTreeFile.java	/^	public int getId() {$/;"	m	class:BTreeFile
+getId	BTreeHeaderPage.java	/^	public BTreePageId getId() {$/;"	m	class:BTreeHeaderPage
+getId	BTreePage.java	/^	public BTreePageId getId() {$/;"	m	class:BTreePage
+getId	BTreeRootPtrPage.java	/^	public BTreePageId getId() {$/;"	m	class:BTreeRootPtrPage
+getId	BTreeRootPtrPage.java	/^	public static BTreePageId getId(int tableid) {$/;"	m	class:BTreeRootPtrPage
+getId	DbFile.java	/^    public int getId();$/;"	m	interface:DbFile
+getId	HeapFile.java	/^    public int getId() {$/;"	m	class:HeapFile
+getId	HeapPage.java	/^    public HeapPageId getId() {$/;"	m	class:HeapPage
+getId	Page.java	/^    public PageId getId();$/;"	m	interface:Page
+getId	Transaction.java	/^    public TransactionId getId() {$/;"	m	class:Transaction
+getId	TransactionId.java	/^    public long getId() {$/;"	m	class:TransactionId
+getJoinField1Name	HashEquiJoin.java	/^    public String getJoinField1Name()$/;"	m	class:HashEquiJoin
+getJoinField1Name	Join.java	/^    public String getJoinField1Name() {$/;"	m	class:Join
+getJoinField2Name	HashEquiJoin.java	/^    public String getJoinField2Name()$/;"	m	class:HashEquiJoin
+getJoinField2Name	Join.java	/^    public String getJoinField2Name() {$/;"	m	class:Join
+getJoinPredicate	HashEquiJoin.java	/^    public JoinPredicate getJoinPredicate() {$/;"	m	class:HashEquiJoin
+getJoinPredicate	Join.java	/^    public JoinPredicate getJoinPredicate() {$/;"	m	class:Join
+getKey	BTreeEntry.java	/^	public Field getKey() {$/;"	m	class:BTreeEntry
+getKey	BTreeInternalPage.java	/^	protected Field getKey(int i) throws NoSuchElementException {$/;"	m	class:BTreeInternalPage
+getLeftChild	BTreeEntry.java	/^	public BTreePageId getLeftChild() {$/;"	m	class:BTreeEntry
+getLeftSiblingId	BTreeLeafPage.java	/^	public BTreePageId getLeftSiblingId() {$/;"	m	class:BTreeLeafPage
+getLen	Type.java	/^    public abstract int getLen();$/;"	m	class:Type
+getLogFile	Database.java	/^    public static LogFile getLogFile() {$/;"	m	class:Database
+getLogicalPlan	Query.java	/^    public LogicalPlan getLogicalPlan() {$/;"	m	class:Query
+getMaxEntries	BTreeInternalPage.java	/^	public int getMaxEntries() {        $/;"	m	class:BTreeInternalPage
+getMaxTuples	BTreeLeafPage.java	/^	public int getMaxTuples() {        $/;"	m	class:BTreeLeafPage
+getNextPageId	BTreeHeaderPage.java	/^	public BTreePageId getNextPageId() {$/;"	m	class:BTreeHeaderPage
+getNumEmptySlots	BTreeInternalPage.java	/^	public int getNumEmptySlots() {$/;"	m	class:BTreeInternalPage
+getNumEmptySlots	BTreeLeafPage.java	/^	public int getNumEmptySlots() {$/;"	m	class:BTreeLeafPage
+getNumEmptySlots	BTreePage.java	/^	public abstract int getNumEmptySlots();$/;"	m	class:BTreePage
+getNumEmptySlots	HeapPage.java	/^    public int getNumEmptySlots() {$/;"	m	class:HeapPage
+getNumEntries	BTreeInternalPage.java	/^	public int getNumEntries() {$/;"	m	class:BTreeInternalPage
+getNumEntriesPerPage	BTreeUtility.java	/^	public static int getNumEntriesPerPage() {$/;"	m	class:BTreeUtility
+getNumSlots	BTreeHeaderPage.java	/^	public static int getNumSlots() {        $/;"	m	class:BTreeHeaderPage
+getNumTuples	BTreeLeafPage.java	/^	public int getNumTuples() {$/;"	m	class:BTreeLeafPage
+getNumTuples	HeapPage.java	/^    private int getNumTuples() {        $/;"	m	class:HeapPage	file:
+getNumTuplesPerPage	BTreeUtility.java	/^	public static int getNumTuplesPerPage(int columns) {$/;"	m	class:BTreeUtility
+getOp	Aggregator.java	/^        public static Op getOp(String s) {$/;"	m	class:Aggregator.Op
+getOp	Aggregator.java	/^        public static Op getOp(int i) {$/;"	m	class:Aggregator.Op
+getOp	IndexPredicate.java	/^    public Predicate.Op getOp() {$/;"	m	class:IndexPredicate
+getOp	Parser.java	/^    public static Predicate.Op getOp(String s) throws simpledb.ParsingException {$/;"	m	class:Parser
+getOp	Predicate.java	/^        public static Op getOp(int i) {$/;"	m	class:Predicate.Op
+getOp	Predicate.java	/^    public Op getOp()$/;"	m	class:Predicate
+getOperand	Predicate.java	/^    public Field getOperand()$/;"	m	class:Predicate
+getOperator	JoinPredicate.java	/^    public Predicate.Op getOperator()$/;"	m	class:JoinPredicate
+getOrder	PlanCache.java	/^    Vector<LogicalJoinNode> getOrder(Set<LogicalJoinNode> s) {$/;"	m	class:PlanCache
+getOrderByField	OrderBy.java	/^    public int getOrderByField()$/;"	m	class:OrderBy
+getOrderFieldName	OrderBy.java	/^    public String getOrderFieldName()$/;"	m	class:OrderBy
+getOutputTupleDesc	Query.java	/^    public TupleDesc getOutputTupleDesc() {$/;"	m	class:Query
+getPage	BTreeFile.java	/^	Page getPage(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreePageId pid, Permissions perm)$/;"	m	class:BTreeFile
+getPage	BufferPool.java	/^    public  Page getPage(TransactionId tid, PageId pid, Permissions perm)$/;"	m	class:BufferPool
+getPageData	BTreeHeaderPage.java	/^	public byte[] getPageData() {$/;"	m	class:BTreeHeaderPage
+getPageData	BTreeInternalPage.java	/^	public byte[] getPageData() {$/;"	m	class:BTreeInternalPage
+getPageData	BTreeLeafPage.java	/^	public byte[] getPageData() {$/;"	m	class:BTreeLeafPage
+getPageData	BTreeRootPtrPage.java	/^	public byte[] getPageData(){$/;"	m	class:BTreeRootPtrPage
+getPageData	HeapPage.java	/^    public byte[] getPageData() {$/;"	m	class:HeapPage
+getPageData	Page.java	/^    public byte[] getPageData();$/;"	m	interface:Page
+getPageId	RecordId.java	/^    public PageId getPageId() {$/;"	m	class:RecordId
+getPageNumber	BTreePageId.java	/^	public int getPageNumber() {$/;"	m	class:BTreePageId
+getPageNumber	HeapPageId.java	/^    public int getPageNumber() {$/;"	m	class:HeapPageId
+getPageNumber	PageId.java	/^    public int getPageNumber();$/;"	m	interface:PageId
+getPageSize	BTreeRootPtrPage.java	/^	public static int getPageSize() {$/;"	m	class:BTreeRootPtrPage
+getPageSize	BufferPool.java	/^    public static int getPageSize() {$/;"	m	class:BufferPool
+getParentId	BTreePage.java	/^	public BTreePageId getParentId() {$/;"	m	class:BTreePage
+getParentWithEmptySlots	BTreeFile.java	/^	private BTreeInternalPage getParentWithEmptySlots(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile	file:
+getPhysicalPlan	Query.java	/^    public OpIterator getPhysicalPlan() {$/;"	m	class:Query
+getPredicate	Filter.java	/^    public Predicate getPredicate() {$/;"	m	class:Filter
+getPrevPageId	BTreeHeaderPage.java	/^	public BTreePageId getPrevPageId() {$/;"	m	class:BTreeHeaderPage
+getPrimaryKey	Catalog.java	/^    public String getPrimaryKey(int tableid) {$/;"	m	class:Catalog
+getQuery	LogicalPlan.java	/^    public String getQuery() {$/;"	m	class:LogicalPlan
+getQueryPlanTree	QueryPlanVisualizer.java	/^    public String getQueryPlanTree(OpIterator physicalPlan) {$/;"	m	class:QueryPlanVisualizer
+getRecordId	BTreeEntry.java	/^	public RecordId getRecordId() {$/;"	m	class:BTreeEntry
+getRecordId	Tuple.java	/^    public RecordId getRecordId() {$/;"	m	class:Tuple
+getRightChild	BTreeEntry.java	/^	public BTreePageId getRightChild() {$/;"	m	class:BTreeEntry
+getRightSiblingId	BTreeLeafPage.java	/^	public BTreePageId getRightSiblingId() {$/;"	m	class:BTreeLeafPage
+getRootId	BTreeRootPtrPage.java	/^	public BTreePageId getRootId() {$/;"	m	class:BTreeRootPtrPage
+getRootPtrPage	BTreeFile.java	/^	BTreeRootPtrPage getRootPtrPage(TransactionId tid, HashMap<PageId, Page> dirtypages) throws DbException, IOException, TransactionAbortedException {$/;"	m	class:BTreeFile
+getSize	TupleDesc.java	/^    public int getSize() {$/;"	m	class:TupleDesc
+getStatsMap	TableStats.java	/^    public static Map<String, TableStats> getStatsMap() {$/;"	m	class:TableStats
+getStrings	Utility.java	/^    public static String[] getStrings(int len, String val) {$/;"	m	class:Utility
+getTableAliasToIdMapping	LogicalPlan.java	/^    public HashMap<String,Integer> getTableAliasToIdMapping()$/;"	m	class:LogicalPlan
+getTableId	BTreePageId.java	/^	public int getTableId() {$/;"	m	class:BTreePageId
+getTableId	Catalog.java	/^    public int getTableId(String name) throws NoSuchElementException {$/;"	m	class:Catalog
+getTableId	HeapPageId.java	/^    public int getTableId() {$/;"	m	class:HeapPageId
+getTableId	LogicalPlan.java	/^    public Integer getTableId(String alias) {$/;"	m	class:LogicalPlan
+getTableId	PageId.java	/^    public int getTableId();$/;"	m	interface:PageId
+getTableName	BTreeScan.java	/^	public String getTableName() {$/;"	m	class:BTreeScan
+getTableName	Catalog.java	/^    public String getTableName(int id) {$/;"	m	class:Catalog
+getTableName	SeqScan.java	/^    public String getTableName() {$/;"	m	class:SeqScan
+getTableStats	TableStats.java	/^    public static TableStats getTableStats(String tablename) {$/;"	m	class:TableStats
+getTotalRecords	LogFile.java	/^    public synchronized int getTotalRecords() {$/;"	m	class:LogFile
+getTransaction	Parser.java	/^    public Transaction getTransaction() {$/;"	m	class:Parser
+getTransactionId	Query.java	/^    public TransactionId getTransactionId() {$/;"	m	class:Query
+getTuple	BTreeLeafPage.java	/^	Tuple getTuple(int i) throws NoSuchElementException {$/;"	m	class:BTreeLeafPage
+getTuple	Utility.java	/^    public static Tuple getTuple(int[] tupledata, int width) {$/;"	m	class:Utility
+getTupleDesc	Aggregate.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Aggregate
+getTupleDesc	BTreeFile.java	/^	public TupleDesc getTupleDesc() {$/;"	m	class:BTreeFile
+getTupleDesc	BTreeScan.java	/^	public TupleDesc getTupleDesc() {$/;"	m	class:BTreeScan
+getTupleDesc	Catalog.java	/^    public TupleDesc getTupleDesc(int tableid) throws NoSuchElementException {$/;"	m	class:Catalog
+getTupleDesc	DbFile.java	/^    public TupleDesc getTupleDesc();$/;"	m	interface:DbFile
+getTupleDesc	Delete.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Delete
+getTupleDesc	Filter.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Filter
+getTupleDesc	HashEquiJoin.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:HashEquiJoin
+getTupleDesc	HeapFile.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:HeapFile
+getTupleDesc	Insert.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Insert
+getTupleDesc	Join.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Join
+getTupleDesc	OpIterator.java	/^  public TupleDesc getTupleDesc();$/;"	m	interface:OpIterator
+getTupleDesc	Operator.java	/^    public abstract TupleDesc getTupleDesc();$/;"	m	class:Operator
+getTupleDesc	OrderBy.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:OrderBy
+getTupleDesc	Parser.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:TupleArrayIterator
+getTupleDesc	Project.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Project
+getTupleDesc	SeqScan.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:SeqScan
+getTupleDesc	Tuple.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:Tuple
+getTupleDesc	TupleIterator.java	/^    public TupleDesc getTupleDesc() {$/;"	m	class:TupleIterator
+getTupleDesc	Utility.java	/^    public static TupleDesc getTupleDesc(int n) {$/;"	m	class:Utility
+getTupleDesc	Utility.java	/^    public static TupleDesc getTupleDesc(int n, String name) {$/;"	m	class:Utility
+getTupleNumber	RecordId.java	/^    public int getTupleNumber() {$/;"	m	class:RecordId
+getType	Field.java	/^    public Type getType();$/;"	m	interface:Field
+getType	IntField.java	/^	public Type getType() {$/;"	m	class:IntField
+getType	StringField.java	/^	public Type getType() {$/;"	m	class:StringField
+getTypes	Utility.java	/^    public static Type[] getTypes(int len) {$/;"	m	class:Utility
+getValue	IntField.java	/^    public int getValue() {$/;"	m	class:IntField
+getValue	StringField.java	/^	public String getValue() {$/;"	m	class:StringField
+groupByField	LogicalPlan.java	/^    private String groupByField = null;$/;"	f	class:LogicalPlan	file:
+groupField	Aggregate.java	/^    public int groupField() {$/;"	m	class:Aggregate
+groupFieldName	Aggregate.java	/^    public String groupFieldName() {$/;"	m	class:Aggregate
+handleDeleteStatement	Parser.java	/^    public Query handleDeleteStatement(ZDelete s, TransactionId tid)$/;"	m	class:Parser
+handleInsertStatement	Parser.java	/^    public Query handleInsertStatement(ZInsert s, TransactionId tId)$/;"	m	class:Parser
+handleMinOccupancyInternalPage	BTreeFile.java	/^	private void handleMinOccupancyInternalPage(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile	file:
+handleMinOccupancyLeafPage	BTreeFile.java	/^	private void handleMinOccupancyLeafPage(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreeLeafPage page, $/;"	m	class:BTreeFile	file:
+handleMinOccupancyPage	BTreeFile.java	/^	private void handleMinOccupancyPage(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreePage page) $/;"	m	class:BTreeFile	file:
+handleQueryStatement	Parser.java	/^    public Query handleQueryStatement(ZQuery s, TransactionId tId)$/;"	m	class:Parser
+handleTransactStatement	Parser.java	/^    public void handleTransactStatement(ZTransactStmt s)$/;"	m	class:Parser
+hasAgg	LogicalPlan.java	/^    private boolean hasAgg = false;$/;"	f	class:LogicalPlan	file:
+hasNext	AbstractDbFileIterator.java	/^	public boolean hasNext() throws DbException, TransactionAbortedException {$/;"	m	class:AbstractDbFileIterator
+hasNext	BTreeInternalPage.java	/^	public boolean hasNext() {$/;"	m	class:BTreeInternalPageIterator
+hasNext	BTreeInternalPage.java	/^	public boolean hasNext() {$/;"	m	class:BTreeInternalPageReverseIterator
+hasNext	BTreeLeafPage.java	/^	public boolean hasNext() {$/;"	m	class:BTreeLeafPageIterator
+hasNext	BTreeLeafPage.java	/^	public boolean hasNext() {$/;"	m	class:BTreeLeafPageReverseIterator
+hasNext	BTreeScan.java	/^	public boolean hasNext() throws TransactionAbortedException, DbException {$/;"	m	class:BTreeScan
+hasNext	DbFileIterator.java	/^    public boolean hasNext()$/;"	m	interface:DbFileIterator
+hasNext	OpIterator.java	/^  public boolean hasNext() throws DbException, TransactionAbortedException;$/;"	m	interface:OpIterator
+hasNext	Operator.java	/^    public boolean hasNext() throws DbException, TransactionAbortedException {$/;"	m	class:Operator
+hasNext	Parser.java	/^    public boolean hasNext() throws DbException, TransactionAbortedException {$/;"	m	class:TupleArrayIterator
+hasNext	Query.java	/^    public boolean hasNext() throws DbException, TransactionAbortedException {$/;"	m	class:Query
+hasNext	SeqScan.java	/^    public boolean hasNext() throws TransactionAbortedException, DbException {$/;"	m	class:SeqScan
+hasNext	TupleIterator.java	/^    public boolean hasNext() {$/;"	m	class:TupleIterator
+hasOrderBy	LogicalPlan.java	/^    private boolean oByAsc, hasOrderBy = false;$/;"	f	class:LogicalPlan	file:
+hasPkey	JoinOptimizer.java	/^    private boolean hasPkey(Vector<LogicalJoinNode> joinlist) {$/;"	m	class:JoinOptimizer	file:
+hashCode	BTreePageId.java	/^	public int hashCode() {$/;"	m	class:BTreePageId
+hashCode	Field.java	/^    public int hashCode();$/;"	m	interface:Field
+hashCode	HeapPageId.java	/^    public int hashCode() {$/;"	m	class:HeapPageId
+hashCode	IntField.java	/^    public int hashCode() {$/;"	m	class:IntField
+hashCode	LogicalJoinNode.java	/^    @Override public int hashCode() {$/;"	m	class:LogicalJoinNode
+hashCode	LogicalSubplanJoinNode.java	/^    @Override public int hashCode() {$/;"	m	class:LogicalSubplanJoinNode
+hashCode	PageId.java	/^    public int hashCode();$/;"	m	interface:PageId
+hashCode	RecordId.java	/^    public int hashCode() {$/;"	m	class:RecordId
+hashCode	StringField.java	/^	public int hashCode() {$/;"	m	class:StringField
+hashCode	TransactionId.java	/^	public int hashCode() {$/;"	m	class:TransactionId
+hashCode	TupleDesc.java	/^    public int hashCode() {$/;"	m	class:TupleDesc
+header	BTreeHeaderPage.java	/^	final byte header[];$/;"	f	class:BTreeHeaderPage
+header	BTreeInternalPage.java	/^	private final byte header[];$/;"	f	class:BTreeInternalPage	file:
+header	BTreeLeafPage.java	/^	private final byte header[];$/;"	f	class:BTreeLeafPage	file:
+header	BTreeRootPtrPage.java	/^	private int header;$/;"	f	class:BTreeRootPtrPage	file:
+header	HeapPage.java	/^    final byte header[];$/;"	f	class:HeapPage
+height	QueryPlanVisualizer.java	/^        int height;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+hist	StringHistogram.java	/^    final IntHistogram hist;$/;"	f	class:StringHistogram
+holdsLock	BufferPool.java	/^    public boolean holdsLock(TransactionId tid, PageId p) {$/;"	m	class:BufferPool
+i	TupleIterator.java	/^    Iterator<Tuple> i = null;$/;"	f	class:TupleIterator
+idPageMap	BufferPool.java	/^    private Map<TransactionId, Page> idPageMap;$/;"	f	class:BufferPool	file:
+inUserTrans	Parser.java	/^    private boolean inUserTrans = false;$/;"	f	class:Parser	file:
+indexIterator	BTreeFile.java	/^	public DbFileIterator indexIterator(TransactionId tid, IndexPredicate ipred) {$/;"	m	class:BTreeFile
+init	BTreeHeaderPage.java	/^	public void init() {$/;"	m	class:BTreeHeaderPage
+init	BTreeUtility.java	/^		private void init(BTreeFile bf, BlockingQueue<ArrayList<Integer>> insertedTuples) {$/;"	m	class:BTreeUtility.BTreeDeleter	file:
+init	BTreeUtility.java	/^		private void init(BTreeFile bf, int[] tupdata, BlockingQueue<ArrayList<Integer>> insertedTuples) {$/;"	m	class:BTreeUtility.BTreeInserter	file:
+insertEntry	BTreeInternalPage.java	/^	public void insertEntry(BTreeEntry e) throws DbException {$/;"	m	class:BTreeInternalPage
+insertTuple	BTreeFile.java	/^	public ArrayList<Page> insertTuple(TransactionId tid, Tuple t)$/;"	m	class:BTreeFile
+insertTuple	BTreeLeafPage.java	/^	public void insertTuple(Tuple t) throws DbException {$/;"	m	class:BTreeLeafPage
+insertTuple	BufferPool.java	/^    public void insertTuple(TransactionId tid, int tableId, Tuple t)$/;"	m	class:BufferPool
+insertTuple	DbFile.java	/^    public ArrayList<Page> insertTuple(TransactionId tid, Tuple t)$/;"	m	interface:DbFile
+insertTuple	HeapFile.java	/^    public ArrayList<Page> insertTuple(TransactionId tid, Tuple t)$/;"	m	class:HeapFile
+insertTuple	HeapPage.java	/^    public void insertTuple(Tuple t) throws DbException {$/;"	m	class:HeapPage
+insertedTuples	BTreeUtility.java	/^		BlockingQueue<ArrayList<Integer>> insertedTuples;$/;"	f	class:BTreeUtility.BTreeDeleter
+insertedTuples	BTreeUtility.java	/^		BlockingQueue<ArrayList<Integer>> insertedTuples;$/;"	f	class:BTreeUtility.BTreeInserter
+instantiateJoin	JoinOptimizer.java	/^    public static OpIterator instantiateJoin(LogicalJoinNode lj,$/;"	m	class:JoinOptimizer
+interactive	Parser.java	/^    protected boolean interactive = true;$/;"	f	class:Parser
+ipred	BTreeFile.java	/^	IndexPredicate ipred;$/;"	f	class:BTreeSearchIterator
+ipred	BTreeScan.java	/^	private IndexPredicate ipred = null;$/;"	f	class:BTreeScan	file:
+isASC	OrderBy.java	/^    public boolean isASC()$/;"	m	class:OrderBy
+isDirty	BTreeHeaderPage.java	/^	public TransactionId isDirty() {$/;"	m	class:BTreeHeaderPage
+isDirty	BTreePage.java	/^	public TransactionId isDirty() {$/;"	m	class:BTreePage
+isDirty	BTreeRootPtrPage.java	/^	public TransactionId isDirty() {$/;"	m	class:BTreeRootPtrPage
+isDirty	HeapPage.java	/^    public TransactionId isDirty() {$/;"	m	class:HeapPage
+isDirty	Page.java	/^    public TransactionId isDirty();$/;"	m	interface:Page
+isEnabled	Debug.java	/^  public static boolean isEnabled() {$/;"	m	class:Debug
+isEnabled	Debug.java	/^  public static boolean isEnabled(int level) {$/;"	m	class:Debug
+isOpen	BTreeScan.java	/^	private boolean isOpen = false;$/;"	f	class:BTreeScan	file:
+isPkey	JoinOptimizer.java	/^    private boolean isPkey(String tableAlias, String field) {$/;"	m	class:JoinOptimizer	file:
+isSlotUsed	BTreeHeaderPage.java	/^	public boolean isSlotUsed(int i) {$/;"	m	class:BTreeHeaderPage
+isSlotUsed	BTreeInternalPage.java	/^	public boolean isSlotUsed(int i) {$/;"	m	class:BTreeInternalPage
+isSlotUsed	BTreeLeafPage.java	/^	public boolean isSlotUsed(int i) {$/;"	m	class:BTreeLeafPage
+isSlotUsed	BTreePage.java	/^	public abstract boolean isSlotUsed(int i);$/;"	m	class:BTreePage
+isSlotUsed	HeapPage.java	/^    public boolean isSlotUsed(int i) {$/;"	m	class:HeapPage
+it	BTreeFile.java	/^	Iterator<Tuple> it = null;$/;"	f	class:BTreeFileIterator
+it	BTreeFile.java	/^	Iterator<Tuple> it = null;$/;"	f	class:BTreeSearchIterator
+it	BTreeScan.java	/^	private transient DbFileIterator it;$/;"	f	class:BTreeScan	file:
+it	OrderBy.java	/^    private Iterator<Tuple> it;$/;"	f	class:OrderBy	file:
+it	Parser.java	/^    Iterator<Tuple> it = null;$/;"	f	class:TupleArrayIterator
+item	BTreeUtility.java	/^		int item;$/;"	f	class:BTreeUtility.BTreeWriter
+iterator	Aggregator.java	/^    public OpIterator iterator();$/;"	m	interface:Aggregator
+iterator	BTreeFile.java	/^	public DbFileIterator iterator(TransactionId tid) {$/;"	m	class:BTreeFile
+iterator	BTreeInternalPage.java	/^	public Iterator<BTreeEntry> iterator() {$/;"	m	class:BTreeInternalPage
+iterator	BTreeLeafPage.java	/^	public Iterator<Tuple> iterator() {$/;"	m	class:BTreeLeafPage
+iterator	DbFile.java	/^    public DbFileIterator iterator(TransactionId tid);$/;"	m	interface:DbFile
+iterator	HeapFile.java	/^    public DbFileIterator iterator(TransactionId tid) {$/;"	m	class:HeapFile
+iterator	HeapPage.java	/^    public Iterator<Tuple> iterator() {$/;"	m	class:HeapPage
+iterator	IntegerAggregator.java	/^    public OpIterator iterator() {$/;"	m	class:IntegerAggregator
+iterator	StringAggregator.java	/^    public OpIterator iterator() {$/;"	m	class:StringAggregator
+iterator	TupleDesc.java	/^    public Iterator<TDItem> iterator() {$/;"	m	class:TupleDesc
+joins	JoinOptimizer.java	/^    Vector<LogicalJoinNode> joins;$/;"	f	class:JoinOptimizer
+joins	LogicalPlan.java	/^    private Vector<LogicalJoinNode> joins;$/;"	f	class:LogicalPlan	file:
+key	BTreeEntry.java	/^	private Field key;$/;"	f	class:BTreeEntry	file:
+keyField	BTreeFile.java	/^	private int keyField;$/;"	f	class:BTreeFile	file:
+keyField	BTreeFile.java	/^	public int keyField() {$/;"	m	class:BTreeFile
+keyField	BTreeFileEncoder.java	/^		private int keyField;$/;"	f	class:BTreeFileEncoder.TupleComparator	file:
+keyField	BTreePage.java	/^	protected final int keyField;$/;"	f	class:BTreePage
+keys	BTreeInternalPage.java	/^	private final Field keys[];$/;"	f	class:BTreeInternalPage	file:
+leftChild	BTreeEntry.java	/^	private BTreePageId leftChild;$/;"	f	class:BTreeEntry	file:
+leftChild	QueryPlanVisualizer.java	/^        SubTreeDescriptor leftChild;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+leftSibling	BTreeLeafPage.java	/^	private int leftSibling; \/\/ leaf node or 0$/;"	f	class:BTreeLeafPage	file:
+leftmostId	BTreeChecker.java	/^        public BTreePageId leftmostId;$/;"	f	class:BTreeChecker.SubtreeSummary
+listIt	HashEquiJoin.java	/^    transient Iterator<Tuple> listIt = null;$/;"	f	class:HashEquiJoin
+listToString	Utility.java	/^    public static String listToString(ArrayList<Integer> list) {$/;"	m	class:Utility
+loadMap	HashEquiJoin.java	/^    private boolean loadMap() throws DbException, TransactionAbortedException {$/;"	m	class:HashEquiJoin	file:
+loadSchema	Catalog.java	/^    public void loadSchema(String catalogFile) {$/;"	m	class:Catalog
+log	Debug.java	/^  public static void log(String message, Object... args) {$/;"	m	class:Debug
+log	Debug.java	/^  public static void log(int level, String message, Object... args) {$/;"	m	class:Debug
+logAbort	LogFile.java	/^    public void logAbort(TransactionId tid) throws IOException {$/;"	m	class:LogFile
+logCheckpoint	LogFile.java	/^    public void logCheckpoint() throws IOException {$/;"	m	class:LogFile
+logCommit	LogFile.java	/^    public synchronized void logCommit(TransactionId tid) throws IOException {$/;"	m	class:LogFile
+logFile	LogFile.java	/^    final File logFile;$/;"	f	class:LogFile
+logTruncate	LogFile.java	/^    public synchronized void logTruncate() throws IOException {$/;"	m	class:LogFile
+logWrite	LogFile.java	/^    public  synchronized void logWrite(TransactionId tid, Page before,$/;"	m	class:LogFile
+logXactionBegin	LogFile.java	/^    public synchronized  void logXactionBegin(TransactionId tid)$/;"	m	class:LogFile
+logicalPlan	Query.java	/^    transient private LogicalPlan logicalPlan;$/;"	f	class:Query	file:
+main	LogicalPlan.java	/^    public static void main(String argv[]) {$/;"	m	class:LogicalPlan
+main	Parser.java	/^    public static void main(String argv[]) throws IOException {$/;"	m	class:Parser
+main	SimpleDb.java	/^    public static void main (String args[])$/;"	m	class:SimpleDb
+map	HashEquiJoin.java	/^    HashMap<Object, ArrayList<Tuple>> map = new HashMap<Object, ArrayList<Tuple>>();$/;"	f	class:HashEquiJoin
+markDirty	BTreeHeaderPage.java	/^	public void markDirty(boolean dirty, TransactionId tid) {$/;"	m	class:BTreeHeaderPage
+markDirty	BTreePage.java	/^	public void markDirty(boolean dirty, TransactionId tid) {$/;"	m	class:BTreePage
+markDirty	BTreeRootPtrPage.java	/^	public void markDirty(boolean dirty, TransactionId tid){$/;"	m	class:BTreeRootPtrPage
+markDirty	HeapPage.java	/^    public void markDirty(boolean dirty, TransactionId tid) {$/;"	m	class:HeapPage
+markDirty	Page.java	/^    public void markDirty(boolean dirty, TransactionId tid);$/;"	m	interface:Page
+markSlotUsed	BTreeHeaderPage.java	/^	public void markSlotUsed(int i, boolean value) {$/;"	m	class:BTreeHeaderPage
+markSlotUsed	BTreeInternalPage.java	/^	private void markSlotUsed(int i, boolean value) {$/;"	m	class:BTreeInternalPage	file:
+markSlotUsed	BTreeLeafPage.java	/^	private void markSlotUsed(int i, boolean value) {$/;"	m	class:BTreeLeafPage	file:
+markSlotUsed	HeapPage.java	/^    private void markSlotUsed(int i, boolean value) {$/;"	m	class:HeapPage	file:
+maxSize	StringField.java	/^	private final int maxSize;$/;"	f	class:StringField	file:
+maxVal	StringHistogram.java	/^    int maxVal() {$/;"	m	class:StringHistogram
+merge	TupleDesc.java	/^    public static TupleDesc merge(TupleDesc td1, TupleDesc td2) {$/;"	m	class:TupleDesc
+mergeInternalPages	BTreeFile.java	/^	protected void mergeInternalPages(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile
+mergeLeafPages	BTreeFile.java	/^	protected void mergeLeafPages(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile
+mergeTupleIntoGroup	Aggregator.java	/^    public void mergeTupleIntoGroup(Tuple tup);$/;"	m	interface:Aggregator
+mergeTupleIntoGroup	IntegerAggregator.java	/^    public void mergeTupleIntoGroup(Tuple tup) {$/;"	m	class:IntegerAggregator
+mergeTupleIntoGroup	StringAggregator.java	/^    public void mergeTupleIntoGroup(Tuple tup) {$/;"	m	class:StringAggregator
+minVal	StringHistogram.java	/^    int minVal() {$/;"	m	class:StringHistogram
+moveEntry	BTreeInternalPage.java	/^	private void moveEntry(int from, int to) {$/;"	m	class:BTreeInternalPage	file:
+moveRecord	BTreeLeafPage.java	/^	private void moveRecord(int from, int to) {$/;"	m	class:BTreeLeafPage	file:
+myTd	BTreeScan.java	/^	private TupleDesc myTd;$/;"	f	class:BTreeScan	file:
+myid	TransactionId.java	/^    final long myid;$/;"	f	class:TransactionId
+name	Catalog.java	/^        public String name;$/;"	f	class:Catalog.Table
+nameOfAggregatorOp	Aggregate.java	/^    public static String nameOfAggregatorOp(Aggregator.Op aop) {$/;"	m	class:Aggregate
+next	AbstractDbFileIterator.java	/^    private Tuple next = null;$/;"	f	class:AbstractDbFileIterator	file:
+next	AbstractDbFileIterator.java	/^    public Tuple next() throws DbException, TransactionAbortedException,$/;"	m	class:AbstractDbFileIterator
+next	BTreeInternalPage.java	/^	public BTreeEntry next() {$/;"	m	class:BTreeInternalPageIterator
+next	BTreeInternalPage.java	/^	public BTreeEntry next() {$/;"	m	class:BTreeInternalPageReverseIterator
+next	BTreeLeafPage.java	/^	public Tuple next() {$/;"	m	class:BTreeLeafPageIterator
+next	BTreeLeafPage.java	/^	public Tuple next() {$/;"	m	class:BTreeLeafPageReverseIterator
+next	BTreeScan.java	/^	public Tuple next() throws NoSuchElementException,$/;"	m	class:BTreeScan
+next	DbFileIterator.java	/^    public Tuple next()$/;"	m	interface:DbFileIterator
+next	OpIterator.java	/^  public Tuple next() throws DbException, TransactionAbortedException, NoSuchElementException;$/;"	m	interface:OpIterator
+next	Operator.java	/^    private Tuple next = null;$/;"	f	class:Operator	file:
+next	Operator.java	/^    public Tuple next() throws DbException, TransactionAbortedException,$/;"	m	class:Operator
+next	Parser.java	/^    public Tuple next() throws DbException, TransactionAbortedException,$/;"	m	class:TupleArrayIterator
+next	Query.java	/^    public Tuple next() throws DbException, NoSuchElementException,$/;"	m	class:Query
+next	SeqScan.java	/^    public Tuple next() throws NoSuchElementException,$/;"	m	class:SeqScan
+next	TupleIterator.java	/^    public Tuple next() {$/;"	m	class:TupleIterator
+nextChildId	BTreeInternalPage.java	/^	BTreePageId nextChildId = null;$/;"	f	class:BTreeInternalPageReverseIterator
+nextPage	BTreeHeaderPage.java	/^	private int nextPage; \/\/ next header page or 0$/;"	f	class:BTreeHeaderPage	file:
+nextToReturn	BTreeInternalPage.java	/^	BTreeEntry nextToReturn = null;$/;"	f	class:BTreeInternalPageIterator
+nextToReturn	BTreeInternalPage.java	/^	BTreeEntry nextToReturn = null;$/;"	f	class:BTreeInternalPageReverseIterator
+nextToReturn	BTreeLeafPage.java	/^	Tuple nextToReturn = null;$/;"	f	class:BTreeLeafPageIterator
+nextToReturn	BTreeLeafPage.java	/^	Tuple nextToReturn = null;$/;"	f	class:BTreeLeafPageReverseIterator
+numFields	TupleDesc.java	/^    public int numFields() {$/;"	m	class:TupleDesc
+numPages	BTreeFile.java	/^	public int numPages() {$/;"	m	class:BTreeFile
+numPages	BufferPool.java	/^    private final int numPages;$/;"	f	class:BufferPool	file:
+numPages	HeapFile.java	/^    public int numPages() {$/;"	m	class:HeapFile
+numSlots	BTreeHeaderPage.java	/^	final int numSlots;$/;"	f	class:BTreeHeaderPage
+numSlots	BTreeInternalPage.java	/^	private final int numSlots;$/;"	f	class:BTreeInternalPage	file:
+numSlots	BTreeLeafPage.java	/^	private final int numSlots;$/;"	f	class:BTreeLeafPage	file:
+numSlots	HeapPage.java	/^    final int numSlots;$/;"	f	class:HeapPage
+oByAsc	LogicalPlan.java	/^    private boolean oByAsc, hasOrderBy = false;$/;"	f	class:LogicalPlan	file:
+oByField	LogicalPlan.java	/^    private String oByField;$/;"	f	class:LogicalPlan	file:
+oldData	BTreeHeaderPage.java	/^	byte[] oldData;$/;"	f	class:BTreeHeaderPage
+oldData	BTreePage.java	/^	protected byte[] oldData;$/;"	f	class:BTreePage
+oldData	BTreeRootPtrPage.java	/^	private byte[] oldData;$/;"	f	class:BTreeRootPtrPage	file:
+oldData	HeapPage.java	/^    byte[] oldData;$/;"	f	class:HeapPage
+oldDataLock	BTreeHeaderPage.java	/^	private final Byte oldDataLock=new Byte((byte)0);$/;"	f	class:BTreeHeaderPage	file:
+oldDataLock	BTreePage.java	/^	protected final Byte oldDataLock=new Byte((byte)0);$/;"	f	class:BTreePage
+oldDataLock	HeapPage.java	/^    private final Byte oldDataLock=new Byte((byte)0);$/;"	f	class:HeapPage	file:
+op	IndexPredicate.java	/^    private Predicate.Op op;$/;"	f	class:IndexPredicate	file:
+op	Query.java	/^    transient private OpIterator op;$/;"	f	class:Query	file:
+open	Aggregate.java	/^    public void open() throws NoSuchElementException, DbException,$/;"	m	class:Aggregate
+open	BTreeFile.java	/^	public void open() throws DbException, TransactionAbortedException {$/;"	m	class:BTreeFileIterator
+open	BTreeFile.java	/^	public void open() throws DbException, TransactionAbortedException {$/;"	m	class:BTreeSearchIterator
+open	BTreeScan.java	/^	public void open() throws DbException, TransactionAbortedException {$/;"	m	class:BTreeScan
+open	DbFileIterator.java	/^    public void open()$/;"	m	interface:DbFileIterator
+open	Delete.java	/^    public void open() throws DbException, TransactionAbortedException {$/;"	m	class:Delete
+open	Filter.java	/^    public void open() throws DbException, NoSuchElementException,$/;"	m	class:Filter
+open	HashEquiJoin.java	/^    public void open() throws DbException, NoSuchElementException,$/;"	m	class:HashEquiJoin
+open	IndexOpIterator.java	/^    public void open(IndexPredicate ipred)$/;"	m	interface:IndexOpIterator
+open	Insert.java	/^    public void open() throws DbException, TransactionAbortedException {$/;"	m	class:Insert
+open	Join.java	/^    public void open() throws DbException, NoSuchElementException,$/;"	m	class:Join
+open	OpIterator.java	/^  public void open()$/;"	m	interface:OpIterator
+open	Operator.java	/^    private boolean open = false;$/;"	f	class:Operator	file:
+open	Operator.java	/^    public void open() throws DbException, TransactionAbortedException {$/;"	m	class:Operator
+open	OrderBy.java	/^    public void open() throws DbException, NoSuchElementException,$/;"	m	class:OrderBy
+open	Parser.java	/^    public void open() throws DbException, TransactionAbortedException {$/;"	m	class:TupleArrayIterator
+open	Project.java	/^    public void open() throws DbException, NoSuchElementException,$/;"	m	class:Project
+open	SeqScan.java	/^    public void open() throws DbException, TransactionAbortedException {$/;"	m	class:SeqScan
+open	TupleIterator.java	/^    public void open() {$/;"	m	class:TupleIterator
+openBTreeFile	BTreeUtility.java	/^	public static BTreeFile openBTreeFile(int cols, File f, int keyField) {$/;"	m	class:BTreeUtility
+openBTreeFile	BTreeUtility.java	/^	public static BTreeFile openBTreeFile(int cols, String colPrefix, File f, int keyField) {$/;"	m	class:BTreeUtility
+openHeapFile	Utility.java	/^    public static HeapFile openHeapFile(int cols, File f) {$/;"	m	class:Utility
+openHeapFile	Utility.java	/^    public static HeapFile openHeapFile(int cols, String colPrefix, File f) {$/;"	m	class:Utility
+orderByField	OrderBy.java	/^    private int orderByField;$/;"	f	class:OrderBy	file:
+orderByFieldName	OrderBy.java	/^    private String orderByFieldName;$/;"	f	class:OrderBy	file:
+orderJoins	JoinOptimizer.java	/^    public Vector<LogicalJoinNode> orderJoins($/;"	m	class:JoinOptimizer
+outFieldIds	Project.java	/^    private ArrayList<Integer> outFieldIds;$/;"	f	class:Project	file:
+p	BTreeInternalPage.java	/^	BTreeInternalPage p;$/;"	f	class:BTreeInternalPageIterator
+p	BTreeInternalPage.java	/^	BTreeInternalPage p;$/;"	f	class:BTreeInternalPageReverseIterator
+p	BTreeLeafPage.java	/^	BTreeLeafPage p;$/;"	f	class:BTreeLeafPageIterator
+p	BTreeLeafPage.java	/^	BTreeLeafPage p;$/;"	f	class:BTreeLeafPageReverseIterator
+p	JoinOptimizer.java	/^    LogicalPlan p;$/;"	f	class:JoinOptimizer
+p	LogicalFilterNode.java	/^    public Predicate.Op p;$/;"	f	class:LogicalFilterNode
+p	LogicalJoinNode.java	/^    public Predicate.Op p;$/;"	f	class:LogicalJoinNode
+pageSize	BufferPool.java	/^    private static int pageSize = DEFAULT_PAGE_SIZE;$/;"	f	class:BufferPool	file:
+pages	BufferPool.java	/^    private Stack<Page> pages;$/;"	f	class:BufferPool	file:
+parent	BTreePage.java	/^	protected int parent; \/\/ parent is always internal node or 0 for root node$/;"	f	class:BTreePage
+parse	Type.java	/^    public abstract Field parse(DataInputStream dis) throws ParseException;$/;"	m	class:Type
+parseQueryLogicalPlan	Parser.java	/^    public LogicalPlan parseQueryLogicalPlan(TransactionId tid, ZQuery q)$/;"	m	class:Parser
+permLevel	Permissions.java	/^  int permLevel;$/;"	f	class:Permissions
+pgNo	BTreePageId.java	/^	private final int pgNo;$/;"	f	class:BTreePageId	file:
+pgcateg	BTreePageId.java	/^	private int pgcateg;$/;"	f	class:BTreePageId	file:
+pgcateg	BTreePageId.java	/^	public int pgcateg() {$/;"	m	class:BTreePageId
+physicalPlan	LogicalPlan.java	/^    public OpIterator physicalPlan(TransactionId t, Map<String,TableStats> baseTableStats, boolean explain) throws ParsingException {$/;"	m	class:LogicalPlan
+pid	BTreeHeaderPage.java	/^	final BTreePageId pid;$/;"	f	class:BTreeHeaderPage
+pid	BTreePage.java	/^	protected final BTreePageId pid;$/;"	f	class:BTreePage
+pid	BTreeRootPtrPage.java	/^	private BTreePageId pid;$/;"	f	class:BTreeRootPtrPage	file:
+pid	HeapPage.java	/^    final HeapPageId pid;$/;"	f	class:HeapPage
+pkeyField	Catalog.java	/^        public String pkeyField;$/;"	f	class:Catalog.Table
+plan	CostCard.java	/^    public Vector<LogicalJoinNode> plan;$/;"	f	class:CostCard
+preAppend	LogFile.java	/^    void preAppend() throws IOException {$/;"	m	class:LogFile
+pred	HashEquiJoin.java	/^    private JoinPredicate pred;$/;"	f	class:HashEquiJoin	file:
+prevChildId	BTreeInternalPage.java	/^	BTreePageId prevChildId = null;$/;"	f	class:BTreeInternalPageIterator
+prevPage	BTreeHeaderPage.java	/^	private int prevPage; \/\/ previous header page or 0$/;"	f	class:BTreeHeaderPage	file:
+print	LogFile.java	/^    public void print() throws IOException {$/;"	m	class:LogFile
+printJoins	JoinOptimizer.java	/^    private void printJoins(Vector<LogicalJoinNode> js, PlanCache pc,$/;"	m	class:JoinOptimizer	file:
+printQueryPlanTree	QueryPlanVisualizer.java	/^    public void printQueryPlanTree(OpIterator physicalPlan, PrintStream out) {$/;"	m	class:QueryPlanVisualizer
+printTree	QueryPlanVisualizer.java	/^    private void printTree(SubTreeDescriptor root, char[] buffer, int width) {$/;"	m	class:QueryPlanVisualizer	file:
+processExpression	Parser.java	/^    void processExpression(TransactionId tid, ZExpression wx, LogicalPlan lp)$/;"	m	class:Parser
+processList	HashEquiJoin.java	/^    private Tuple processList() throws TransactionAbortedException, DbException {$/;"	m	class:HashEquiJoin	file:
+processNextStatement	Parser.java	/^    public void processNextStatement(InputStream is) {$/;"	m	class:Parser
+processNextStatement	Parser.java	/^    public void processNextStatement(String s) {$/;"	m	class:Parser
+ptrLeft	BTreeChecker.java	/^        public BTreePageId ptrLeft;$/;"	f	class:BTreeChecker.SubtreeSummary
+ptrRight	BTreeChecker.java	/^        public BTreePageId ptrRight;$/;"	f	class:BTreeChecker.SubtreeSummary
+query	LogicalPlan.java	/^    private String query;$/;"	f	class:LogicalPlan	file:
+raf	LogFile.java	/^    private RandomAccessFile raf;$/;"	f	class:LogFile	file:
+readNext	AbstractDbFileIterator.java	/^    protected abstract Tuple readNext() throws DbException, TransactionAbortedException;$/;"	m	class:AbstractDbFileIterator
+readNext	BTreeFile.java	/^	protected Tuple readNext() throws TransactionAbortedException, DbException {$/;"	m	class:BTreeFileIterator
+readNext	BTreeFile.java	/^	protected Tuple readNext() throws TransactionAbortedException, DbException,$/;"	m	class:BTreeSearchIterator
+readNextChild	BTreeInternalPage.java	/^	private int readNextChild(DataInputStream dis, int slotId) throws NoSuchElementException {$/;"	m	class:BTreeInternalPage	file:
+readNextKey	BTreeInternalPage.java	/^	private Field readNextKey(DataInputStream dis, int slotId) throws NoSuchElementException {$/;"	m	class:BTreeInternalPage	file:
+readNextTuple	BTreeLeafPage.java	/^	private Tuple readNextTuple(DataInputStream dis, int slotId) throws NoSuchElementException {$/;"	m	class:BTreeLeafPage	file:
+readNextTuple	HeapPage.java	/^    private Tuple readNextTuple(DataInputStream dis, int slotId) throws NoSuchElementException {$/;"	m	class:HeapPage	file:
+readPage	BTreeFile.java	/^	public Page readPage(PageId pid) {$/;"	m	class:BTreeFile
+readPage	DbFile.java	/^    public Page readPage(PageId id);$/;"	m	interface:DbFile
+readPage	HeapFile.java	/^    public Page readPage(PageId pid) {$/;"	m	class:HeapFile
+readPageData	LogFile.java	/^    Page readPageData(RandomAccessFile raf) throws IOException {$/;"	m	class:LogFile
+recordId	Tuple.java	/^    RecordId recordId = null;$/;"	f	class:Tuple
+recover	LogFile.java	/^    public void recover() throws IOException {$/;"	m	class:LogFile
+recoveryUndecided	LogFile.java	/^    Boolean recoveryUndecided; \/\/ no call to recover() and no append to log$/;"	f	class:LogFile
+releasePage	BufferPool.java	/^    public  void releasePage(TransactionId tid, PageId pid) {$/;"	m	class:BufferPool
+remove	BTreeInternalPage.java	/^	public void remove() {$/;"	m	class:BTreeInternalPageIterator
+remove	BTreeInternalPage.java	/^	public void remove() {$/;"	m	class:BTreeInternalPageReverseIterator
+remove	BTreeLeafPage.java	/^	public void remove() {$/;"	m	class:BTreeLeafPageIterator
+remove	BTreeLeafPage.java	/^	public void remove() {$/;"	m	class:BTreeLeafPageReverseIterator
+rerun	BTreeUtility.java	/^		public void rerun(BTreeFile bf, BlockingQueue<ArrayList<Integer>> insertedTuples) {$/;"	m	class:BTreeUtility.BTreeDeleter
+rerun	BTreeUtility.java	/^		public void rerun(BTreeFile bf, int[] tupdata, BlockingQueue<ArrayList<Integer>> insertedTuples) {$/;"	m	class:BTreeUtility.BTreeInserter
+reset	BTreeScan.java	/^	public void reset(int tableid, String tableAlias) {$/;"	m	class:BTreeScan
+reset	Database.java	/^    public static void reset() {$/;"	m	class:Database
+reset	SeqScan.java	/^    public void reset(int tableid, String tableAlias) {$/;"	m	class:SeqScan
+resetBufferPool	Database.java	/^    public static BufferPool resetBufferPool(int pages) {$/;"	m	class:Database
+resetPageSize	BufferPool.java	/^    public static void resetPageSize() {$/;"	m	class:BufferPool
+resetTupleDesc	Tuple.java	/^    public void resetTupleDesc(TupleDesc td)$/;"	m	class:Tuple
+reverseIterator	BTreeInternalPage.java	/^	public Iterator<BTreeEntry> reverseIterator() {$/;"	m	class:BTreeInternalPage
+reverseIterator	BTreeLeafPage.java	/^	public Iterator<Tuple> reverseIterator() {$/;"	m	class:BTreeLeafPage
+rewind	Aggregate.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:Aggregate
+rewind	BTreeFile.java	/^	public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:BTreeFileIterator
+rewind	BTreeFile.java	/^	public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:BTreeSearchIterator
+rewind	BTreeScan.java	/^	public void rewind() throws DbException, NoSuchElementException,$/;"	m	class:BTreeScan
+rewind	DbFileIterator.java	/^    public void rewind() throws DbException, TransactionAbortedException;$/;"	m	interface:DbFileIterator
+rewind	Delete.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:Delete
+rewind	Filter.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:Filter
+rewind	HashEquiJoin.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:HashEquiJoin
+rewind	IndexOpIterator.java	/^    public void rewind(IndexPredicate ipred)$/;"	m	interface:IndexOpIterator
+rewind	Insert.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:Insert
+rewind	Join.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:Join
+rewind	OpIterator.java	/^  public void rewind() throws DbException, TransactionAbortedException;$/;"	m	interface:OpIterator
+rewind	OrderBy.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:OrderBy
+rewind	Parser.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:TupleArrayIterator
+rewind	Project.java	/^    public void rewind() throws DbException, TransactionAbortedException {$/;"	m	class:Project
+rewind	SeqScan.java	/^    public void rewind() throws DbException, NoSuchElementException,$/;"	m	class:SeqScan
+rewind	TupleIterator.java	/^    public void rewind() {$/;"	m	class:TupleIterator
+rid	BTreeEntry.java	/^	private RecordId rid; \/\/ null if not stored on any page$/;"	f	class:BTreeEntry	file:
+rightChild	BTreeEntry.java	/^	private BTreePageId rightChild;$/;"	f	class:BTreeEntry	file:
+rightChild	QueryPlanVisualizer.java	/^        SubTreeDescriptor rightChild;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+rightSibling	BTreeLeafPage.java	/^	private int rightSibling; \/\/ leaf node or 0$/;"	f	class:BTreeLeafPage	file:
+rightmostId	BTreeChecker.java	/^        public BTreePageId rightmostId;$/;"	f	class:BTreeChecker.SubtreeSummary
+rollback	LogFile.java	/^    public void rollback(TransactionId tid)$/;"	m	class:LogFile
+root	BTreeRootPtrPage.java	/^	private int root; $/;"	f	class:BTreeRootPtrPage	file:
+rootCategory	BTreeRootPtrPage.java	/^	private int rootCategory;$/;"	f	class:BTreeRootPtrPage	file:
+run	BTreeUtility.java	/^		public void run() {$/;"	m	class:BTreeUtility.BTreeDeleter
+run	BTreeUtility.java	/^		public void run() {$/;"	m	class:BTreeUtility.BTreeInserter
+run	BTreeUtility.java	/^		public void run() {$/;"	m	class:BTreeUtility.BTreeReader
+run	BTreeUtility.java	/^		public void run() {$/;"	m	class:BTreeUtility.BTreeWriter
+selectList	LogicalPlan.java	/^    private Vector<LogicalSelectListNode> selectList;$/;"	f	class:LogicalPlan	file:
+serialVersionUID	Aggregate.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Aggregate	file:
+serialVersionUID	BTreeEntry.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:BTreeEntry	file:
+serialVersionUID	BTreeScan.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:BTreeScan	file:
+serialVersionUID	DbException.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:DbException	file:
+serialVersionUID	DeadlockException.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:DeadlockException	file:
+serialVersionUID	Delete.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Delete	file:
+serialVersionUID	Filter.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Filter	file:
+serialVersionUID	HashEquiJoin.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:HashEquiJoin	file:
+serialVersionUID	IndexPredicate.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:IndexPredicate	file:
+serialVersionUID	Insert.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Insert	file:
+serialVersionUID	IntField.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:IntField	file:
+serialVersionUID	IntegerAggregator.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:IntegerAggregator	file:
+serialVersionUID	Join.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Join	file:
+serialVersionUID	JoinPredicate.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:JoinPredicate	file:
+serialVersionUID	Operator.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Operator	file:
+serialVersionUID	OrderBy.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:OrderBy	file:
+serialVersionUID	Parser.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:TupleArrayIterator	file:
+serialVersionUID	ParsingException.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:ParsingException	file:
+serialVersionUID	Predicate.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Predicate	file:
+serialVersionUID	Project.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Project	file:
+serialVersionUID	Query.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Query	file:
+serialVersionUID	RecordId.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:RecordId	file:
+serialVersionUID	SeqScan.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:SeqScan	file:
+serialVersionUID	StringAggregator.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:StringAggregator	file:
+serialVersionUID	StringField.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:StringField	file:
+serialVersionUID	TransactionAbortedException.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:TransactionAbortedException	file:
+serialVersionUID	TransactionId.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:TransactionId	file:
+serialVersionUID	Tuple.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Tuple	file:
+serialVersionUID	TupleDesc.java	/^        private static final long serialVersionUID = 1L;$/;"	f	class:TupleDesc.TDItem	file:
+serialVersionUID	TupleDesc.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:TupleDesc	file:
+serialVersionUID	TupleIterator.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:TupleIterator	file:
+serialize	BTreePageId.java	/^	public int[] serialize() {$/;"	m	class:BTreePageId
+serialize	Field.java	/^    void serialize(DataOutputStream dos) throws IOException;$/;"	m	interface:Field
+serialize	HeapPageId.java	/^    public int[] serialize() {$/;"	m	class:HeapPageId
+serialize	IntField.java	/^    public void serialize(DataOutputStream dos) throws IOException {$/;"	m	class:IntField
+serialize	PageId.java	/^    public int[] serialize();$/;"	m	interface:PageId
+serialize	StringField.java	/^	public void serialize(DataOutputStream dos) throws IOException {$/;"	m	class:StringField
+setBeforeImage	BTreeHeaderPage.java	/^	public void setBeforeImage() {$/;"	m	class:BTreeHeaderPage
+setBeforeImage	BTreeInternalPage.java	/^	public void setBeforeImage() {$/;"	m	class:BTreeInternalPage
+setBeforeImage	BTreeLeafPage.java	/^	public void setBeforeImage() {$/;"	m	class:BTreeLeafPage
+setBeforeImage	BTreeRootPtrPage.java	/^	public void setBeforeImage() {$/;"	m	class:BTreeRootPtrPage
+setBeforeImage	HeapPage.java	/^    public void setBeforeImage() {$/;"	m	class:HeapPage
+setBeforeImage	Page.java	/^    public void setBeforeImage();$/;"	m	interface:Page
+setChildren	Aggregate.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:Aggregate
+setChildren	Delete.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:Delete
+setChildren	Filter.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:Filter
+setChildren	HashEquiJoin.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:HashEquiJoin
+setChildren	Insert.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:Insert
+setChildren	Join.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:Join
+setChildren	Operator.java	/^    public abstract void setChildren(OpIterator[] children);$/;"	m	class:Operator
+setChildren	OrderBy.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:OrderBy
+setChildren	Project.java	/^    public void setChildren(OpIterator[] children) {$/;"	m	class:Project
+setEmptyPage	BTreeFile.java	/^	protected void setEmptyPage(TransactionId tid, HashMap<PageId, Page> dirtypages, int emptyPageNo) $/;"	m	class:BTreeFile
+setEstimatedCardinality	Operator.java	/^    protected void setEstimatedCardinality(int card) {$/;"	m	class:Operator
+setField	Tuple.java	/^    public void setField(int i, Field f) {$/;"	m	class:Tuple
+setHeaderId	BTreeRootPtrPage.java	/^	public void setHeaderId(BTreePageId id) throws DbException {$/;"	m	class:BTreeRootPtrPage
+setKey	BTreeEntry.java	/^	public void setKey(Field key) {$/;"	m	class:BTreeEntry
+setLeftChild	BTreeEntry.java	/^	public void setLeftChild(BTreePageId leftChild) {$/;"	m	class:BTreeEntry
+setLeftSiblingId	BTreeLeafPage.java	/^	public void setLeftSiblingId(BTreePageId id) throws DbException {$/;"	m	class:BTreeLeafPage
+setLogicalPlan	Query.java	/^    public void setLogicalPlan(LogicalPlan lp) {$/;"	m	class:Query
+setNextPageId	BTreeHeaderPage.java	/^	public void setNextPageId(BTreePageId id) throws DbException {$/;"	m	class:BTreeHeaderPage
+setPageSize	BufferPool.java	/^    public static void setPageSize(int pageSize) {$/;"	m	class:BufferPool
+setParentId	BTreePage.java	/^	public void setParentId(BTreePageId id) throws DbException {$/;"	m	class:BTreePage
+setParents	BTreeFileEncoder.java	/^	private static void setParents(BTreeFile bf, BTreePageId pid, BTreePageId parent) $/;"	m	class:BTreeFileEncoder	file:
+setPhysicalPlan	Query.java	/^    public void setPhysicalPlan(OpIterator pp) {$/;"	m	class:Query
+setPrevPageId	BTreeHeaderPage.java	/^	public void setPrevPageId(BTreePageId id) throws DbException {$/;"	m	class:BTreeHeaderPage
+setQuery	LogicalPlan.java	/^    public void setQuery(String query)  {$/;"	m	class:LogicalPlan
+setRecordId	BTreeEntry.java	/^	public void setRecordId(RecordId rid) {$/;"	m	class:BTreeEntry
+setRecordId	Tuple.java	/^    public void setRecordId(RecordId rid) {$/;"	m	class:Tuple
+setRightChild	BTreeEntry.java	/^	public void setRightChild(BTreePageId rightChild) {$/;"	m	class:BTreeEntry
+setRightSiblingId	BTreeLeafPage.java	/^	public void setRightSiblingId(BTreePageId id) throws DbException {$/;"	m	class:BTreeLeafPage
+setRightSiblingPtrs	BTreeFileEncoder.java	/^	private static void setRightSiblingPtrs(BTreeFile bf, BTreePageId pid, BTreePageId rightSiblingId) $/;"	m	class:BTreeFileEncoder	file:
+setRootId	BTreeRootPtrPage.java	/^	public void setRootId(BTreePageId id) throws DbException {$/;"	m	class:BTreeRootPtrPage
+setStatsMap	TableStats.java	/^    public static void setStatsMap(HashMap<String,TableStats> s)$/;"	m	class:TableStats
+setTableStats	TableStats.java	/^    public static void setTableStats(String tablename, TableStats stats) {$/;"	m	class:TableStats
+setTransaction	Parser.java	/^    public void setTransaction(Transaction t) {$/;"	m	class:Parser
+shutdown	LogFile.java	/^    public synchronized void shutdown() {$/;"	m	class:LogFile
+shutdown	Parser.java	/^    protected void shutdown() {$/;"	m	class:Parser
+simpledb	AbstractDbFileIterator.java	/^package simpledb;$/;"	p
+simpledb	Aggregate.java	/^package simpledb;$/;"	p
+simpledb	Aggregator.java	/^package simpledb;$/;"	p
+simpledb	BTreeChecker.java	/^package simpledb;$/;"	p
+simpledb	BTreeEntry.java	/^package simpledb;$/;"	p
+simpledb	BTreeFile.java	/^package simpledb;$/;"	p
+simpledb	BTreeFileEncoder.java	/^package simpledb;$/;"	p
+simpledb	BTreeHeaderPage.java	/^package simpledb;$/;"	p
+simpledb	BTreeInternalPage.java	/^package simpledb;$/;"	p
+simpledb	BTreeLeafPage.java	/^package simpledb;$/;"	p
+simpledb	BTreePage.java	/^package simpledb;$/;"	p
+simpledb	BTreePageId.java	/^package simpledb;$/;"	p
+simpledb	BTreeRootPtrPage.java	/^package simpledb;$/;"	p
+simpledb	BTreeScan.java	/^package simpledb;$/;"	p
+simpledb	BTreeUtility.java	/^package simpledb;$/;"	p
+simpledb	BufferPool.java	/^package simpledb;$/;"	p
+simpledb	Catalog.java	/^package simpledb;$/;"	p
+simpledb	CostCard.java	/^package simpledb;$/;"	p
+simpledb	Database.java	/^package simpledb;$/;"	p
+simpledb	DbException.java	/^package simpledb;$/;"	p
+simpledb	DbFile.java	/^package simpledb;$/;"	p
+simpledb	DbFileIterator.java	/^package simpledb;$/;"	p
+simpledb	DeadlockException.java	/^package simpledb;$/;"	p
+simpledb	Debug.java	/^package simpledb;$/;"	p
+simpledb	Delete.java	/^package simpledb;$/;"	p
+simpledb	Field.java	/^package simpledb;$/;"	p
+simpledb	Filter.java	/^package simpledb;$/;"	p
+simpledb	HashEquiJoin.java	/^package simpledb;$/;"	p
+simpledb	HeapFile.java	/^package simpledb;$/;"	p
+simpledb	HeapFileEncoder.java	/^package simpledb;$/;"	p
+simpledb	HeapPage.java	/^package simpledb;$/;"	p
+simpledb	HeapPageId.java	/^package simpledb;$/;"	p
+simpledb	IndexOpIterator.java	/^package simpledb;$/;"	p
+simpledb	IndexPredicate.java	/^package simpledb;$/;"	p
+simpledb	Insert.java	/^package simpledb;$/;"	p
+simpledb	IntField.java	/^package simpledb;$/;"	p
+simpledb	IntHistogram.java	/^package simpledb;$/;"	p
+simpledb	IntegerAggregator.java	/^package simpledb;$/;"	p
+simpledb	Join.java	/^package simpledb;$/;"	p
+simpledb	JoinOptimizer.java	/^package simpledb;$/;"	p
+simpledb	JoinPredicate.java	/^package simpledb;$/;"	p
+simpledb	LogFile.java	/^package simpledb;$/;"	p
+simpledb	LogicalFilterNode.java	/^package simpledb;$/;"	p
+simpledb	LogicalJoinNode.java	/^package simpledb;$/;"	p
+simpledb	LogicalPlan.java	/^package simpledb;$/;"	p
+simpledb	LogicalScanNode.java	/^package simpledb;$/;"	p
+simpledb	LogicalSelectListNode.java	/^package simpledb;$/;"	p
+simpledb	LogicalSubplanJoinNode.java	/^package simpledb;$/;"	p
+simpledb	OpIterator.java	/^package simpledb;$/;"	p
+simpledb	Operator.java	/^package simpledb;$/;"	p
+simpledb	OperatorCardinality.java	/^package simpledb;$/;"	p
+simpledb	OrderBy.java	/^package simpledb;$/;"	p
+simpledb	Page.java	/^package simpledb;$/;"	p
+simpledb	PageId.java	/^package simpledb;$/;"	p
+simpledb	Parser.java	/^package simpledb;$/;"	p
+simpledb	ParsingException.java	/^package simpledb;$/;"	p
+simpledb	Permissions.java	/^package simpledb;$/;"	p
+simpledb	PlanCache.java	/^package simpledb;$/;"	p
+simpledb	Predicate.java	/^package simpledb;$/;"	p
+simpledb	Project.java	/^package simpledb;$/;"	p
+simpledb	Query.java	/^package simpledb;$/;"	p
+simpledb	QueryPlanVisualizer.java	/^package simpledb;$/;"	p
+simpledb	RecordId.java	/^package simpledb;$/;"	p
+simpledb	SeqScan.java	/^package simpledb;$/;"	p
+simpledb	SimpleDb.java	/^package simpledb;$/;"	p
+simpledb	StringAggregator.java	/^package simpledb;$/;"	p
+simpledb	StringField.java	/^package simpledb;$/;"	p
+simpledb	StringHistogram.java	/^package simpledb;$/;"	p
+simpledb	TableStats.java	/^package simpledb;$/;"	p
+simpledb	Transaction.java	/^package simpledb;$/;"	p
+simpledb	TransactionAbortedException.java	/^package simpledb;$/;"	p
+simpledb	TransactionId.java	/^package simpledb;$/;"	p
+simpledb	Tuple.java	/^package simpledb;$/;"	p
+simpledb	TupleDesc.java	/^package simpledb;$/;"	p
+simpledb	TupleIterator.java	/^package simpledb;$/;"	p
+simpledb	Type.java	/^package simpledb;$/;"	p
+simpledb	Utility.java	/^package simpledb;$/;"	p
+slock	BTreeUtility.java	/^		Object slock;$/;"	f	class:BTreeUtility.BTreeDeleter
+slock	BTreeUtility.java	/^		Object slock;$/;"	f	class:BTreeUtility.BTreeInserter
+slock	BTreeUtility.java	/^		Object slock;$/;"	f	class:BTreeUtility.BTreeReader
+slock	BTreeUtility.java	/^		Object slock;$/;"	f	class:BTreeUtility.BTreeWriter
+splitInternalPage	BTreeFile.java	/^	protected BTreeInternalPage splitInternalPage(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile
+splitLeafPage	BTreeFile.java	/^	protected BTreeLeafPage splitLeafPage(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreeLeafPage page, Field field) $/;"	m	class:BTreeFile
+start	Parser.java	/^    protected void start(String[] argv) throws IOException {$/;"	m	class:Parser
+start	Query.java	/^    public void start() throws IOException, DbException,$/;"	m	class:Query
+start	Transaction.java	/^    public void start() {$/;"	m	class:Transaction
+started	Query.java	/^    transient private boolean started = false;$/;"	f	class:Query	file:
+started	Transaction.java	/^    volatile boolean started = false;$/;"	f	class:Transaction
+statsMap	TableStats.java	/^    private static final ConcurrentHashMap<String, TableStats> statsMap = new ConcurrentHashMap<String, TableStats>();$/;"	f	class:TableStats	file:
+stealFromLeafPage	BTreeFile.java	/^	protected void stealFromLeafPage(BTreeLeafPage page, BTreeLeafPage sibling,$/;"	m	class:BTreeFile
+stealFromLeftInternalPage	BTreeFile.java	/^	protected void stealFromLeftInternalPage(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile
+stealFromRightInternalPage	BTreeFile.java	/^	protected void stealFromRightInternalPage(TransactionId tid, HashMap<PageId, Page> dirtypages, $/;"	m	class:BTreeFile
+stringToInt	StringHistogram.java	/^    private int stringToInt(String s) {$/;"	m	class:StringHistogram	file:
+subPlan	LogicalSubplanJoinNode.java	/^    OpIterator subPlan;$/;"	f	class:LogicalSubplanJoinNode
+subplanMap	LogicalPlan.java	/^    private HashMap<String, OpIterator> subplanMap;$/;"	f	class:LogicalPlan	file:
+succeeded	BTreeUtility.java	/^		 public boolean succeeded() {$/;"	m	class:BTreeUtility.BTreeDeleter
+succeeded	BTreeUtility.java	/^		 public boolean succeeded() {$/;"	m	class:BTreeUtility.BTreeInserter
+succeeded	BTreeUtility.java	/^		 public boolean succeeded() {$/;"	m	class:BTreeUtility.BTreeWriter
+success	BTreeUtility.java	/^		boolean success;$/;"	f	class:BTreeUtility.BTreeDeleter
+success	BTreeUtility.java	/^		boolean success;$/;"	f	class:BTreeUtility.BTreeInserter
+success	BTreeUtility.java	/^		boolean success;$/;"	f	class:BTreeUtility.BTreeWriter
+swapInnerOuter	LogicalJoinNode.java	/^    public LogicalJoinNode swapInnerOuter() {$/;"	m	class:LogicalJoinNode
+swapInnerOuter	LogicalSubplanJoinNode.java	/^    public LogicalSubplanJoinNode swapInnerOuter() {$/;"	m	class:LogicalSubplanJoinNode
+t	LogicalScanNode.java	/^    public int t;$/;"	f	class:LogicalScanNode
+t1	HashEquiJoin.java	/^    transient private Tuple t1 = null;$/;"	f	class:HashEquiJoin	file:
+t1Alias	LogicalJoinNode.java	/^    public String t1Alias;$/;"	f	class:LogicalJoinNode
+t2	HashEquiJoin.java	/^    transient private Tuple t2 = null;$/;"	f	class:HashEquiJoin	file:
+t2Alias	LogicalJoinNode.java	/^    public String t2Alias;$/;"	f	class:LogicalJoinNode
+tableAlias	LogicalFilterNode.java	/^    public String tableAlias;$/;"	f	class:LogicalFilterNode
+tableId	BTreePageId.java	/^	private final int tableId;$/;"	f	class:BTreePageId	file:
+tableIdIterator	Catalog.java	/^    public Iterator<Integer> tableIdIterator() {$/;"	m	class:Catalog
+tableMap	Catalog.java	/^    Map<Integer,Table> tableMap;$/;"	f	class:Catalog
+tableMap	LogicalPlan.java	/^    private HashMap<String,Integer> tableMap;$/;"	f	class:LogicalPlan	file:
+tableName2IdMap	Catalog.java	/^    Map<String,Integer> tableName2IdMap;$/;"	f	class:Catalog
+tableid	BTreeFile.java	/^	private final int tableid ;$/;"	f	class:BTreeFile	file:
+tablename	BTreeScan.java	/^	private String tablename;$/;"	f	class:BTreeScan	file:
+tables	LogicalPlan.java	/^    private Vector<LogicalScanNode> tables;$/;"	f	class:LogicalPlan	file:
+td	BTreeFile.java	/^	private final TupleDesc td;$/;"	f	class:BTreeFile	file:
+td	BTreePage.java	/^	protected final TupleDesc td;$/;"	f	class:BTreePage
+td	HeapPage.java	/^    final TupleDesc td;$/;"	f	class:HeapPage
+td	OrderBy.java	/^    private TupleDesc td;$/;"	f	class:OrderBy	file:
+td	Project.java	/^    private TupleDesc td;$/;"	f	class:Project	file:
+td	TupleIterator.java	/^    TupleDesc td = null;$/;"	f	class:TupleIterator
+tdItemList	TupleDesc.java	/^    private List<TDItem> tdItemList = new ArrayList<>();$/;"	f	class:TupleDesc	file:
+text	QueryPlanVisualizer.java	/^        String text;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+textStartPosition	QueryPlanVisualizer.java	/^        int textStartPosition;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+tid	BTreeFile.java	/^	TransactionId tid;$/;"	f	class:BTreeFileIterator
+tid	BTreeFile.java	/^	TransactionId tid;$/;"	f	class:BTreeSearchIterator
+tid	BTreeScan.java	/^	private TransactionId tid;$/;"	f	class:BTreeScan	file:
+tid	BTreeUtility.java	/^		TransactionId tid;$/;"	f	class:BTreeUtility.BTreeDeleter
+tid	BTreeUtility.java	/^		TransactionId tid;$/;"	f	class:BTreeUtility.BTreeInserter
+tid	BTreeUtility.java	/^		TransactionId tid;$/;"	f	class:BTreeUtility.BTreeReader
+tid	BTreeUtility.java	/^		TransactionId tid;$/;"	f	class:BTreeUtility.BTreeWriter
+tid	Query.java	/^    TransactionId tid;$/;"	f	class:Query
+tid	Transaction.java	/^    private final TransactionId tid;$/;"	f	class:Transaction	file:
+tidToFirstLogRecord	LogFile.java	/^    HashMap<Long,Long> tidToFirstLogRecord = new HashMap<Long,Long>();$/;"	f	class:LogFile
+toString	Aggregator.java	/^        public String toString()$/;"	m	class:Aggregator.Op
+toString	BTreeEntry.java	/^	public String toString() {$/;"	m	class:BTreeEntry
+toString	BTreePageId.java	/^	public String toString() {$/;"	m	class:BTreePageId
+toString	Field.java	/^    public String toString();$/;"	m	interface:Field
+toString	IntField.java	/^    public String toString() {$/;"	m	class:IntField
+toString	IntHistogram.java	/^    public String toString() {$/;"	m	class:IntHistogram
+toString	LogicalJoinNode.java	/^    @Override public String toString() {$/;"	m	class:LogicalJoinNode
+toString	Permissions.java	/^  public String toString() {$/;"	m	class:Permissions
+toString	Predicate.java	/^        public String toString() {$/;"	m	class:Predicate.Op
+toString	Predicate.java	/^    public String toString() {$/;"	m	class:Predicate
+toString	StringField.java	/^	public String toString() {$/;"	m	class:StringField
+toString	Tuple.java	/^    public String toString() {$/;"	m	class:Tuple
+toString	TupleDesc.java	/^        public String toString() {$/;"	m	class:TupleDesc.TDItem
+toString	TupleDesc.java	/^    public String toString() {$/;"	m	class:TupleDesc
+totalRecords	LogFile.java	/^    int totalRecords = 0; \/\/ for PatchTest \/\/protected by this$/;"	f	class:LogFile
+totalTuples	TableStats.java	/^    public int totalTuples() {$/;"	m	class:TableStats
+transactionComplete	BufferPool.java	/^    public void transactionComplete(TransactionId tid) throws IOException {$/;"	m	class:BufferPool
+transactionComplete	BufferPool.java	/^    public void transactionComplete(TransactionId tid, boolean commit)$/;"	m	class:BufferPool
+transactionComplete	Transaction.java	/^    public void transactionComplete(boolean abort) throws IOException {$/;"	m	class:Transaction
+tupdata	BTreeUtility.java	/^		int[] tupdata;$/;"	f	class:BTreeUtility.BTreeInserter
+tuple	BTreeUtility.java	/^		ArrayList<Integer> tuple;$/;"	f	class:BTreeUtility.BTreeDeleter
+tupleDesc	Tuple.java	/^    TupleDesc tupleDesc = null;$/;"	f	class:Tuple
+tupleToList	BTreeUtility.java	/^	public static ArrayList<Integer> tupleToList(Tuple tuple) {$/;"	m	class:BTreeUtility
+tuples	BTreeLeafPage.java	/^	private final Tuple tuples[];$/;"	f	class:BTreeLeafPage	file:
+tuples	HeapPage.java	/^    final Tuple tuples[];$/;"	f	class:HeapPage
+tuples	TupleIterator.java	/^    Iterable<Tuple> tuples = null;$/;"	f	class:TupleIterator
+tups	Parser.java	/^    ArrayList<Tuple> tups;$/;"	f	class:TupleArrayIterator
+upBarPosition	QueryPlanVisualizer.java	/^        int upBarPosition;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+updateAggregateCardinality	OperatorCardinality.java	/^    private static boolean updateAggregateCardinality(Aggregate a,$/;"	m	class:OperatorCardinality	file:
+updateEntries	BTreeFileEncoder.java	/^	private static void updateEntries(ArrayList<ArrayList<BTreeEntry>> entries, $/;"	m	class:BTreeFileEncoder	file:
+updateEntry	BTreeInternalPage.java	/^	public void updateEntry(BTreeEntry e) throws DbException {$/;"	m	class:BTreeInternalPage
+updateFilterCardinality	OperatorCardinality.java	/^    private static boolean updateFilterCardinality(Filter f,$/;"	m	class:OperatorCardinality	file:
+updateHashEquiJoinCardinality	OperatorCardinality.java	/^    private static boolean updateHashEquiJoinCardinality(HashEquiJoin j,$/;"	m	class:OperatorCardinality	file:
+updateJoinCardinality	OperatorCardinality.java	/^    private static boolean updateJoinCardinality(Join j,$/;"	m	class:OperatorCardinality	file:
+updateOperatorCardinality	OperatorCardinality.java	/^    public static boolean updateOperatorCardinality(Operator o,$/;"	m	class:OperatorCardinality
+updateParentPointer	BTreeFile.java	/^	private void updateParentPointer(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreePageId pid, BTreePageId child) $/;"	m	class:BTreeFile	file:
+updateParentPointers	BTreeFile.java	/^	private void updateParentPointers(TransactionId tid, HashMap<PageId, Page> dirtypages, BTreeInternalPage page) $/;"	m	class:BTreeFile	file:
+usage	Parser.java	/^    static final String usage = "Usage: parser catalogFile [-explain] [-f queryFile]";$/;"	f	class:Parser
+value	IntField.java	/^	private final int value;$/;"	f	class:IntField	file:
+value	StringField.java	/^	private final String value;$/;"	f	class:StringField	file:
+width	QueryPlanVisualizer.java	/^        int width;$/;"	f	class:QueryPlanVisualizer.SubTreeDescriptor
+writePage	BTreeFile.java	/^	public void writePage(Page page) throws IOException {$/;"	m	class:BTreeFile
+writePage	DbFile.java	/^    public void writePage(Page p) throws IOException;$/;"	m	interface:DbFile
+writePage	HeapFile.java	/^    public void writePage(Page page) throws IOException {$/;"	m	class:HeapFile
+writePageData	LogFile.java	/^    void writePageData(RandomAccessFile raf, Page p) throws IOException{$/;"	m	class:LogFile

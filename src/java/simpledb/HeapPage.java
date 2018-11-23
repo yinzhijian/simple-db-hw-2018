@@ -67,7 +67,8 @@ public class HeapPage implements Page {
     */
     private int getNumTuples() {        
         // some code goes here
-        return 0;
+        int tupleSize = Database.getCatalog().getTupleDesc(pid.getTableId()).getSize();
+        return (int)Math.floor((BufferPool.getPageSize()*8) / (tupleSize * 8 + 1));
 
     }
 
@@ -78,7 +79,7 @@ public class HeapPage implements Page {
     private int getHeaderSize() {        
         
         // some code goes here
-        return 0;
+        return (int)Math.ceil((double)numSlots/8);
                  
     }
     
@@ -112,7 +113,7 @@ public class HeapPage implements Page {
      */
     public HeapPageId getId() {
     // some code goes here
-    throw new UnsupportedOperationException("implement this");
+        return pid;
     }
 
     /**
@@ -282,7 +283,13 @@ public class HeapPage implements Page {
      */
     public int getNumEmptySlots() {
         // some code goes here
-        return 0;
+        int num = 0;
+        for (int i = 0; i < numSlots; i++) {
+            if (!isSlotUsed(i)) {
+                num++;
+            }
+        }
+        return num;
     }
 
     /**
@@ -290,7 +297,15 @@ public class HeapPage implements Page {
      */
     public boolean isSlotUsed(int i) {
         // some code goes here
-        return false;
+        int index = i / 8;
+        int offset = i % 8;
+        if (header.length <= index) {
+            System.out.println("header.length: " + header.length + " i: " + i + " index: " + index + " offset: " + offset);
+        }
+        if ((header[index] & (1 << offset)) == 0) {
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -307,7 +322,26 @@ public class HeapPage implements Page {
      */
     public Iterator<Tuple> iterator() {
         // some code goes here
-        return null;
+        return new Iterator<Tuple>() {
+            private int pos=0;
+
+            public boolean hasNext() {
+                for (;pos < tuples.length; pos++) {
+                    if (isSlotUsed(pos)) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            public Tuple next() {
+                return tuples[pos++];
+            }
+
+            public void remove() {
+                throw new UnsupportedOperationException("Cannot remove an element of an array.");
+            }
+        };
     }
 
 }

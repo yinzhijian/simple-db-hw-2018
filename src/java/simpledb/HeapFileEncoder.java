@@ -134,35 +134,36 @@ public class HeapFileEncoder {
                 continue;
             recordcount++;
             first = true;
-        } else
+        } else {
             first = false;
+        }
         if (c == fieldSeparator || c == '\n' || c == '\r') {
             String s = new String(buf, 0, curpos);
             if (typeAr[fieldNo] == Type.INT_TYPE) {
                 try {
+                    System.out.println("LINE : " + s);
                     pageStream.writeInt(Integer.parseInt(s.trim()));
                 } catch (NumberFormatException e) {
-                    System.out.println ("BAD LINE : " + s);
+                    System.out.println("BAD LINE : " + s);
                 }
-            }
-            else   if (typeAr[fieldNo] == Type.STRING_TYPE) {
+            } else if (typeAr[fieldNo] == Type.STRING_TYPE) {
                 s = s.trim();
                 int overflow = Type.STRING_LEN - s.length();
                 if (overflow < 0) {
-                    String news = s.substring(0,Type.STRING_LEN);
-                    s  = news;
+                    String news = s.substring(0, Type.STRING_LEN);
+                    s = news;
                 }
                 pageStream.writeInt(s.length());
                 pageStream.writeBytes(s);
                 while (overflow-- > 0)
-                    pageStream.write((byte)0);
+                    pageStream.write((byte) 0);
             }
             curpos = 0;
             if (c == '\n')
                 fieldNo = 0;
             else
                 fieldNo++;
-            
+
         } else if (c == -1) {
             done = true;
             

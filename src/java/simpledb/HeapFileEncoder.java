@@ -141,7 +141,7 @@ public class HeapFileEncoder {
             String s = new String(buf, 0, curpos);
             if (typeAr[fieldNo] == Type.INT_TYPE) {
                 try {
-                    System.out.println("LINE : " + s);
+                    //System.out.println("LINE : " + s);
                     pageStream.writeInt(Integer.parseInt(s.trim()));
                 } catch (NumberFormatException e) {
                     System.out.println("BAD LINE : " + s);

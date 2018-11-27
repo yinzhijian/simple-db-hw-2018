@@ -3,18 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8c02408c-9a65-4453-bf3c-c7e1be712cea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Aggregate.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Aggregate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/BufferPool.java" afterPath="$PROJECT_DIR$/src/java/simpledb/BufferPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Filter.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Filter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/HeapFileEncoder.java" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapFileEncoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Delete.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Delete.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/HeapPage.java" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/IntegerAggregator.java" afterPath="$PROJECT_DIR$/src/java/simpledb/IntegerAggregator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Join.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Join.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/JoinPredicate.java" afterPath="$PROJECT_DIR$/src/java/simpledb/JoinPredicate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Predicate.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Predicate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/StringAggregator.java" afterPath="$PROJECT_DIR$/src/java/simpledb/StringAggregator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/JoinTest.java" afterPath="$PROJECT_DIR$/test/simpledb/JoinTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/HeapPageId.java" afterPath="$PROJECT_DIR$/src/java/simpledb/HeapPageId.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/simpledb/Insert.java" afterPath="$PROJECT_DIR$/src/java/simpledb/Insert.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,108 +25,129 @@
     <favorites_list name="simple-db-hw" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeapPageWriteTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/simpledb/HeapPageWriteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeapFileWriteTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/simpledb/HeapFileWriteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/simpledb/TestUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="387" column="50" lean-forward="false" selection-start-line="387" selection-start-column="50" selection-end-line="387" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BufferPool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/simpledb/BufferPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="183" column="29" lean-forward="false" selection-start-line="183" selection-start-column="29" selection-end-line="183" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tuple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/simpledb/Tuple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/simpledb/DbFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecordId.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/simpledb/RecordId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeapFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="108" column="73" lean-forward="false" selection-start-line="108" selection-start-column="73" selection-end-line="108" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BufferPoolWriteTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/simpledb/BufferPoolWriteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionId.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/simpledb/TransactionId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BufferPool.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/BufferPool.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="804">
+                  <caret line="269" column="0" lean-forward="true" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LinkedHashMap.java" pinned="false" current-in-tab="false">
+            <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/LinkedHashMap.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="638">
+                  <caret line="366" column="11" lean-forward="false" selection-start-line="366" selection-start-column="11" selection-end-line="366" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/Page.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HeapPage.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapPage.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2737">
+                  <caret line="244" column="34" lean-forward="false" selection-start-line="244" selection-start-column="34" selection-end-line="244" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HeapFile.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapFile.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="468">
+                  <caret line="87" column="24" lean-forward="false" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Insert.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/Insert.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="590">
+                  <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="InsertTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/simpledb/systemtest/InsertTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Operator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/Operator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="399">
+                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/Database.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="760">
+                  <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#1330#1331#0" expanded="true" />
+                    <element signature="e#1380#1381#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Delete.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/Delete.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="380">
+                  <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Insert.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/java/simpledb/Insert.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1995">
+                  <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -159,6 +173,8 @@
       <find>LINE</find>
       <find>cnt</find>
       <find>doAggregate</find>
+      <find>Write</find>
+      <find>numPages</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,7 +185,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/java/simpledb/TupleDesc.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/Catalog.java" />
-        <option value="$PROJECT_DIR$/src/java/simpledb/HeapPageId.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/RecordId.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/SeqScan.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/test.java" />
@@ -186,8 +201,11 @@
         <option value="$PROJECT_DIR$/src/java/simpledb/StringAggregator.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/IntegerAggregator.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/Debug.java" />
-        <option value="$PROJECT_DIR$/src/java/simpledb/HeapPage.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/HeapFile.java" />
+        <option value="$PROJECT_DIR$/src/java/simpledb/HeapPageId.java" />
+        <option value="$PROJECT_DIR$/src/java/simpledb/HeapPage.java" />
+        <option value="$PROJECT_DIR$/src/java/simpledb/Delete.java" />
+        <option value="$PROJECT_DIR$/src/java/simpledb/Insert.java" />
         <option value="$PROJECT_DIR$/src/java/simpledb/BufferPool.java" />
       </list>
     </option>
@@ -214,6 +232,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,7 +324,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -534,7 +552,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.49190283" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16041666" sideWeight="0.49190283" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -615,59 +633,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapPageId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/DbException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Permissions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="2066" column="23" lean-forward="false" selection-start-line="2066" selection-start-column="23" selection-end-line="2066" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="250" column="27" lean-forward="false" selection-start-line="250" selection-start-column="27" selection-end-line="250" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/SeqScan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
-          <folding>
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1755#1756#0" expanded="false" />
-            <element signature="e#2837#2838#0" expanded="false" />
-            <element signature="e#2916#2917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/simpledb/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -830,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/simpledb/IntegerAggregatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2185">
@@ -878,10 +835,10 @@
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6392#6393#0" expanded="true" />
-            <element signature="e#6435#6436#0" expanded="true" />
-            <element signature="e#6492#6493#0" expanded="true" />
-            <element signature="e#6539#6540#0" expanded="true" />
+            <element signature="e#6392#6393#0" expanded="false" />
+            <element signature="e#6435#6436#0" expanded="false" />
+            <element signature="e#6492#6493#0" expanded="false" />
+            <element signature="e#6539#6540#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -910,14 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/PageId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/simpledb/HeapFileReadTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -930,41 +879,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="105" column="16" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Page.java">
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/TransactionId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="133">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#462#463#0" expanded="false" />
+            <element signature="e#489#490#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapPage.java">
+    <entry file="file://$PROJECT_DIR$/test/simpledb/TestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="956">
-          <caret line="266" column="54" lean-forward="false" selection-start-line="266" selection-start-column="54" selection-end-line="266" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/simpledb/HeapPageWriteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="656">
+          <caret line="387" column="50" lean-forward="false" selection-start-line="387" selection-start-column="50" selection-end-line="387" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -977,10 +912,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/simpledb/TestUtil.java">
+    <entry file="file://$PROJECT_DIR$/test/simpledb/HeapPageWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="387" column="50" lean-forward="false" selection-start-line="387" selection-start-column="50" selection-end-line="387" selection-end-column="50" />
+        <state relative-caret-position="19">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/PageId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapPageId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Tuple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -996,47 +955,106 @@
     <entry file="file://$PROJECT_DIR$/src/java/simpledb/RecordId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Tuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/TransactionId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="108" column="73" lean-forward="false" selection-start-line="108" selection-start-column="73" selection-end-line="108" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/simpledb/BufferPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="183" column="29" lean-forward="false" selection-start-line="183" selection-start-column="29" selection-end-line="183" selection-end-column="29" />
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/simpledb/BufferPoolWriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+        <state relative-caret-position="305">
+          <caret line="33" column="77" lean-forward="false" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/simpledb/InsertTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding>
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Insert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Delete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/simpledb/systemtest/InsertTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="87" column="24" lean-forward="false" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HeapPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="244" column="34" lean-forward="false" selection-start-line="244" selection-start-column="34" selection-end-line="244" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/LinkedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="366" column="11" lean-forward="false" selection-start-line="366" selection-start-column="11" selection-end-line="366" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/BufferPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="269" column="0" lean-forward="true" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
           <folding />
         </state>
       </provider>
